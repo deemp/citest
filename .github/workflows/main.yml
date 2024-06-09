@@ -93,7 +93,7 @@ jobs:
       - uses: nixbuild/nix-quick-install-action@v28
 
       - name: Restore and save Nix store
-        uses: ./.
+        uses: nix-community/cache-nix-action@v5.2.0
         with:
           primary-key: similar-cache-common-${{ hashFiles('.github/workflows/main.yaml') }}
           # if no hit, restore current versions of individual caches
