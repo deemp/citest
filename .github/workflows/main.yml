@@ -95,6 +95,9 @@ jobs:
       - name: Restore and save Nix store
         uses: nix-community/cache-nix-action@v5.2.0
         with:
+          paths: |
+            deps
+            _build
           primary-key: similar-cache-common-${{ hashFiles('.github/workflows/main.yml') }}
           # if no hit, restore current versions of individual caches
           restore-prefixes-all-matches: |
