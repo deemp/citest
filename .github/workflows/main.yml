@@ -1,0 +1,118 @@
+name: Main CI workflow
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+  NIX_CONFIG: "experimental-features = nix-command flakes"
+
+jobs:
+  test-matrix:
+    runs-on: ubuntu-22.04
+
+    strategy:
+      fail-fast: false
+      matrix:
+        test:
+          - make-target: "check-formatting"
+          - make-target: "credo"
+          - make-target: "compile"
+          - make-target: "test"
+          - make-target: "nix-build"
+          - make-target: "nix-check"
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.1
+
+      - name: Install Nix
+        uses: nixbuild/nix-quick-install-action@v28
+
+      - name: Restore and cache Nix store
+        uses: nix-community/cache-nix-action@v5.2.0
+        with:
+          # restore and save a cache using this key
+          primary-key: similar-cache-individual-${{ matrix.test.make-target }}-${{ hashFiles('.github/workflows/main.yaml') }}
+          # if there's no cache hit, restore a cache by this prefix
+          # ignore for now
+          restore-prefixes-first-match: similar-cache-common-${{ hashFiles('.github/workflows/main.yaml') }}
+
+      - name: Run make target
+        run: |
+          nix develop -c make ${{ matrix.test.make-target }}
+
+      - name: Save Nix store - ${{ matrix.test.make-target }}
+        if: steps.restore.outputs.hit == 'false'
+        uses: ./save
+        with:
+          # save a new cache every time `ci.yaml` changes
+          primary-key: similar-cache-individual-${{ matrix.test.make-target }}-${{ hashFiles('.github/workflows/main.yaml') }}
+          # do purge caches
+          purge: true
+          # purge all versions of the cache
+          purge-prefixes: similar-cache-individual-${{ matrix.test.make-target }}-
+          # created more than 0 seconds ago relative to the start of the `Post Restore` phase
+          purge-created: 0
+          # except the version with the `primary-key`, if it exists
+          purge-primary-key: never
+
+
+  # Merge similar `individual` caches
+  # Purge `individual` caches and old `common` caches
+  # Save new `common` caches
+  merge-similar-caches:
+    name: Merge similar caches
+    needs: test-matrix
+    permissions:
+      actions: write
+    strategy:
+      matrix:
+        test:
+          - make-target: "check-formatting"
+          - make-target: "credo"
+          - make-target: "compile"
+          - make-target: "test"
+          - make-target: "nix-build"
+          - make-target: "nix-check"
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v4
+
+      - name: Rebase
+        run: |
+          ${{
+              github.head_ref
+                && format('gh pr checkout {0}', github.event.pull_request.number)
+                || format('git pull --rebase origin {0}', github.ref_name)
+            }}
+
+      - uses: nixbuild/nix-quick-install-action@v28
+
+      - name: Restore and save Nix store
+        uses: ./.
+        with:
+          primary-key: similar-cache-common-${{ hashFiles('.github/workflows/main.yaml') }}
+          # if no hit, restore current versions of individual caches
+          restore-prefixes-all-matches: |
+            similar-cache-individual-check-formatting-${{ hashFiles('.github/workflows/main.yaml') }}
+            similar-cache-individual-credo-${{ hashFiles('.github/workflows/main.yaml') }}
+            similar-cache-individual-compile-${{ hashFiles('.github/workflows/main.yaml') }}
+            similar-cache-individual-test-${{ hashFiles('.github/workflows/main.yaml') }}
+            similar-cache-individual-nix-build-${{ hashFiles('.github/workflows/main.yaml') }}
+            similar-cache-individual-nix-check-${{ hashFiles('.github/workflows/main.yaml') }}
+          # do purge caches
+          purge: true
+          # purge old versions of the `common` cache and any versions of individual caches
+          purge-prefixes: |
+            similar-cache-common-
+            similar-cache-individual-
+          # created more than 0 seconds ago relative to the start of the `Post Restore` phase
+          purge-created: 0
+          # except the version with the `primary-key`, if it exists
+          purge-primary-key: never

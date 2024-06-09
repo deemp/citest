@@ -32,6 +32,8 @@
           citest = beam_pkgs.mixRelease {
             inherit src pname version mixFodDeps elixir;
 
+            ELIXIR_MAKE_CACHE_DIR = "/tmp/";
+
             postBuild = ''
               # Consult https://nixos.org/manual/nixpkgs/unstable/#mix-release-example if node dependencies are needed
               # For external task you need a workaround for the no deps check flag
