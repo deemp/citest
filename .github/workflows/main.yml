@@ -77,15 +77,6 @@ jobs:
     needs: test-matrix
     permissions:
       actions: write
-    strategy:
-      matrix:
-        test:
-          - make-target: "check-formatting"
-          - make-target: "credo"
-          - make-target: "compile"
-          - make-target: "test"
-          - make-target: "nix-build"
-          - make-target: "nix-check"
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout this repo
