@@ -37,10 +37,10 @@ jobs:
         uses: nix-community/cache-nix-action@v5.2.0
         with:
           # restore and save a cache using this key
-          primary-key: similar-cache-individual-${{ matrix.test.make-target }}-${{ hashFiles('.github/workflows/main.yaml') }}
+          primary-key: similar-cache-individual-${{ matrix.test.make-target }}-${{ hashFiles('.github/workflows/main.yml') }}
           # if there's no cache hit, restore a cache by this prefix
           # ignore for now
-          restore-prefixes-first-match: similar-cache-common-${{ hashFiles('.github/workflows/main.yaml') }}
+          restore-prefixes-first-match: similar-cache-common-${{ hashFiles('.github/workflows/main.yml') }}
           paths: |
             deps
             _build
@@ -58,7 +58,7 @@ jobs:
         uses: ./save
         with:
           # save a new cache every time `ci.yaml` changes
-          primary-key: similar-cache-individual-${{ matrix.test.make-target }}-${{ hashFiles('.github/workflows/main.yaml') }}
+          primary-key: similar-cache-individual-${{ matrix.test.make-target }}-${{ hashFiles('.github/workflows/main.yml') }}
           # do purge caches
           purge: true
           # purge all versions of the cache
@@ -95,15 +95,15 @@ jobs:
       - name: Restore and save Nix store
         uses: nix-community/cache-nix-action@v5.2.0
         with:
-          primary-key: similar-cache-common-${{ hashFiles('.github/workflows/main.yaml') }}
+          primary-key: similar-cache-common-${{ hashFiles('.github/workflows/main.yml') }}
           # if no hit, restore current versions of individual caches
           restore-prefixes-all-matches: |
-            similar-cache-individual-check-formatting-${{ hashFiles('.github/workflows/main.yaml') }}
-            similar-cache-individual-credo-${{ hashFiles('.github/workflows/main.yaml') }}
-            similar-cache-individual-compile-${{ hashFiles('.github/workflows/main.yaml') }}
-            similar-cache-individual-test-${{ hashFiles('.github/workflows/main.yaml') }}
-            similar-cache-individual-nix-build-${{ hashFiles('.github/workflows/main.yaml') }}
-            similar-cache-individual-nix-check-${{ hashFiles('.github/workflows/main.yaml') }}
+            similar-cache-individual-check-formatting-${{ hashFiles('.github/workflows/main.yml') }}
+            similar-cache-individual-credo-${{ hashFiles('.github/workflows/main.yml') }}
+            similar-cache-individual-compile-${{ hashFiles('.github/workflows/main.yml') }}
+            similar-cache-individual-test-${{ hashFiles('.github/workflows/main.yml') }}
+            similar-cache-individual-nix-build-${{ hashFiles('.github/workflows/main.yml') }}
+            similar-cache-individual-nix-check-${{ hashFiles('.github/workflows/main.yml') }}
           # do purge caches
           purge: true
           # purge old versions of the `common` cache and any versions of individual caches
