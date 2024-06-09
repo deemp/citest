@@ -51,6 +51,7 @@ jobs:
 
       - name: Run make target
         run: |
+          echo "hej"
           nix develop -c make ${{ matrix.test.make-target }}
 
       - name: Save Nix store - ${{ matrix.test.make-target }}
