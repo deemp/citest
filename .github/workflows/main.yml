@@ -34,7 +34,7 @@ jobs:
         uses: nixbuild/nix-quick-install-action@v28
 
       - name: Restore and cache Nix store
-        uses: nix-community/cache-nix-action@v5.2.0
+        uses: nix-community/cache-nix-action@v5.1.0
         with:
           # restore and save a cache using this key
           primary-key: similar-cache-individual-${{ matrix.test.make-target }}-${{ hashFiles('.github/workflows/main.yml') }}
@@ -94,7 +94,7 @@ jobs:
       - uses: nixbuild/nix-quick-install-action@v28
 
       - name: Restore and save Nix store
-        uses: nix-community/cache-nix-action@v5.2.0
+        uses: nix-community/cache-nix-action@v5.1.0
         with:
           paths: |
             deps
