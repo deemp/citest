@@ -41,6 +41,13 @@ jobs:
           # if there's no cache hit, restore a cache by this prefix
           # ignore for now
           restore-prefixes-first-match: similar-cache-common-${{ hashFiles('.github/workflows/main.yaml') }}
+          paths: |
+            deps
+            _build
+
+      - name: Setup dependencies
+        run: |
+          nix develop -c mix deps.get
 
       - name: Run make target
         run: |
