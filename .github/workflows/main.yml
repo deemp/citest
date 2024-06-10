@@ -12,19 +12,8 @@ env:
   NIX_CONFIG: "experimental-features = nix-command flakes"
 
 jobs:
-  test-matrix:
+  ci:
     runs-on: ubuntu-22.04
-
-    strategy:
-      fail-fast: false
-      matrix:
-        test:
-          - make-target: "check-formatting"
-          - make-target: "credo"
-          - make-target: "compile"
-          - make-target: "test"
-          - make-target: "nix-build"
-          - make-target: "nix-check"
 
     steps:
       - name: Checkout repository
@@ -37,10 +26,7 @@ jobs:
         uses: nix-community/cache-nix-action@v5.1.0
         with:
           # restore and save a cache using this key
-          primary-key: similar-cache-individual-${{ matrix.test.make-target }}-${{ hashFiles('.github/workflows/main.yml') }}
-          # if there's no cache hit, restore a cache by this prefix
-          # ignore for now
-          restore-prefixes-first-match: similar-cache-common-${{ hashFiles('.github/workflows/main.yml') }}
+          primary-key: cache-${{ hashFiles('.github/workflows/main.yml') }}
           paths: |
             deps
             _build
@@ -49,72 +35,26 @@ jobs:
         run: |
           nix develop -c mix deps.get
 
-      - name: Run make target
+      - name: formatting
         run: |
-          echo "hej"
-          nix develop -c make ${{ matrix.test.make-target }}
+          nix develop -c make check-formatting
 
-      - name: Save Nix store - ${{ matrix.test.make-target }}
-        if: steps.restore.outputs.hit == 'false'
-        uses: ./save
-        with:
-          # save a new cache every time `ci.yaml` changes
-          primary-key: similar-cache-individual-${{ matrix.test.make-target }}-${{ hashFiles('.github/workflows/main.yml') }}
-          # do purge caches
-          purge: true
-          # purge all versions of the cache
-          purge-prefixes: similar-cache-individual-${{ matrix.test.make-target }}-
-          # created more than 0 seconds ago relative to the start of the `Post Restore` phase
-          purge-created: 0
-          # except the version with the `primary-key`, if it exists
-          purge-primary-key: never
-
-
-  # Merge similar `individual` caches
-  # Purge `individual` caches and old `common` caches
-  # Save new `common` caches
-  merge-similar-caches:
-    name: Merge similar caches
-    needs: test-matrix
-    permissions:
-      actions: write
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Checkout this repo
-        uses: actions/checkout@v4
-
-      - name: Rebase
+      - name: credo
         run: |
-          ${{
-              github.head_ref
-                && format('gh pr checkout {0}', github.event.pull_request.number)
-                || format('git pull --rebase origin {0}', github.ref_name)
-            }}
+          nix develop -c make credo
 
-      - uses: nixbuild/nix-quick-install-action@v28
+      - name: compile
+        run: |
+          nix develop -c make compile
 
-      - name: Restore and save Nix store
-        uses: nix-community/cache-nix-action@v5.1.0
-        with:
-          paths: |
-            deps
-            _build
-          primary-key: similar-cache-common-${{ hashFiles('.github/workflows/main.yml') }}
-          # if no hit, restore current versions of individual caches
-          restore-prefixes-all-matches: |
-            similar-cache-individual-check-formatting-${{ hashFiles('.github/workflows/main.yml') }}
-            similar-cache-individual-credo-${{ hashFiles('.github/workflows/main.yml') }}
-            similar-cache-individual-compile-${{ hashFiles('.github/workflows/main.yml') }}
-            similar-cache-individual-test-${{ hashFiles('.github/workflows/main.yml') }}
-            similar-cache-individual-nix-build-${{ hashFiles('.github/workflows/main.yml') }}
-            similar-cache-individual-nix-check-${{ hashFiles('.github/workflows/main.yml') }}
-          # do purge caches
-          purge: true
-          # purge old versions of the `common` cache and any versions of individual caches
-          purge-prefixes: |
-            similar-cache-common-
-            similar-cache-individual-
-          # created more than 0 seconds ago relative to the start of the `Post Restore` phase
-          purge-created: 0
-          # except the version with the `primary-key`, if it exists
-          purge-primary-key: never
+      - name: test
+        run: |
+          nix develop -c make test
+
+      - name: nix-build
+        run: |
+          make nix-build
+
+      - name: nix-check
+        run: |
+          make nix-check
