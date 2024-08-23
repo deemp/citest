@@ -1,6 +1,7 @@
 name: Main CI workflow
 
 on:
+  workflow_dispatch:
   push:
     branches: [ master ]
   pull_request:
