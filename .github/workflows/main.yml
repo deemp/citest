@@ -1,10 +1,9 @@
 name: Main CI workflow
 
 on:
+  workflow_dispatch:
   push:
-    branches: [ master ]
   pull_request:
-    branches: [ master ]
 
 env:
   REGISTRY: ghcr.io
