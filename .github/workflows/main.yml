@@ -54,7 +54,7 @@ jobs:
           nix develop -c make ${{ matrix.test.make-target }}
           
       - name: Setup tmate session
-        if: always()
+        if: always() && ${{ matrix.test.make-target }} == "nix-build"
         uses: mxschmitt/action-tmate@v3
 
       - name: Save Nix store - ${{ matrix.test.make-target }}
