@@ -22,13 +22,7 @@ jobs:
         uses: nix-community/cache-nix-action@v5.2.0
         id: restore
         with:
-          # restore and save a cache using this key
           primary-key: similar-cache-individual-${{ env.make-target }}-${{ hashFiles('.github/workflows/main.yml') }}
-          # if there's no cache hit, restore a cache by this prefix
-          # ignore for now
-          # paths: |
-          #   deps
-          #   _build
 
       - name: Setup dependencies
         run: |
