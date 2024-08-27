@@ -24,10 +24,6 @@ jobs:
         with:
           primary-key: similar-cache-individual-${{ env.make-target }}-${{ hashFiles('.github/workflows/main.yml') }}
 
-      - name: Setup dependencies
-        run: |
-          nix develop -c mix deps.get
-
       - name: Run make target
         run: |
           nix build
