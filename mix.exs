@@ -72,4 +72,3 @@ defmodule Citest.MixProject do
     ]
   end
 end
-
