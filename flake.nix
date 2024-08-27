@@ -80,6 +80,7 @@
           };
 
           packages.citest = citest;
+          packages.citestDeps = mixFodDeps;
           packages.default = self'.packages.citest;
         };
     });
