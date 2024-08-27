@@ -71,26 +71,6 @@
             '';
           };
         in {
-          # Per-system attributes can be defined here. The self' and inputs'
-          # module parameters provide easy access to attributes of the same
-          # system.
-
-          devshells.default = {
-            devshell.name = pname;
-            env = [
-              {
-                name = "MIX_PATH";
-                value =
-                  "${pkgs.beam.packages.erlang.hex}/lib/erlang/lib/hex/ebin";
-              }
-              {
-                name = "LANG";
-                value = "C.UTF-8";
-              }
-
-            ];
-            packages = [ elixir pkgs.sqlite pkgs.inotify-tools ];
-          };
 
           packages.citest = citest;
           packages.citestDeps = mixFodDeps;
