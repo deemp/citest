@@ -17,7 +17,6 @@
         let
           pname = "citest";
           version = "0.0.1";
-          src = ./.;
           tailwindCss = pkgs.nodePackages.tailwindcss.overrideAttrs (oa: {
             plugins = [ pkgs.nodePackages."@tailwindcss/forms" ];
             version = "3.4.1";
@@ -37,7 +36,21 @@
           };
           elixir = beam_pkgs.elixir_1_16;
           citest = beam_pkgs.mixRelease {
-            inherit src pname version mixFodDeps elixir;
+            inherit pname version mixFodDeps elixir;
+            
+            src = pkgs.lib.fileset.toSource {
+              root = ./.;
+              fileset = pkgs.lib.fileset.unions [
+                ./assets
+                ./config
+                ./lib
+                ./priv
+                ./test
+                ./.formatter.exs
+                ./mix.exs
+                ./mix.lock
+              ];
+            };
 
             ELIXIR_MAKE_CACHE_DIR = "/tmp/";
 
