@@ -25,8 +25,7 @@ jobs:
           primary-key: similar-cache-individual-${{ env.make-target }}-${{ hashFiles('.github/workflows/main.yml') }}
 
       - name: Run make target
-        run: |
-          nix build
+        run: nix build
           
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
