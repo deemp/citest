@@ -25,7 +25,14 @@
           beam_pkgs = pkgs.beam.packagesWith pkgs.beam.interpreters.erlang;
           mixFodDeps = pkgs.beamPackages.fetchMixDeps {
             pname = "${pname}-deps";
-            inherit src version;
+            inherit version;
+            src = pkgs.lib.fileset.toSource {
+              root = ./.;
+              fileset = pkgs.lib.fileset.unions [
+                ./mix.exs
+                ./mix.lock
+              ];
+            };
             hash = "sha256-sfzH3J5nUy4wDCbztvVAN+wYPcQzmAxNsioYcrrKlGk=";
           };
           elixir = beam_pkgs.elixir_1_16;
