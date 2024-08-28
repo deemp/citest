@@ -36,20 +36,22 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
             
-      - name: List /nix before success
+      - name: Before success
         run: |
           tree -a /nix > nix.txt
-          git add nix.txt
+          cp /nix/var/nix/db/db.sqlite db.sqlite
+          git add
           git commit -m "before success"
           git push
         
       - name: Build
         run: nix build
         
-      - name: List /nix after success
+      - name: After success
         run: |
           tree -a /nix > nix.txt
-          git add nix.txt
+          cp /nix/var/nix/db/db.sqlite db.sqlite
+          git add
           git commit -m "after success"
           git push
 
@@ -79,21 +81,23 @@ jobs:
       - name: Pull changes
         run: git pull
           
-      - name: List /nix before failure
+      - name: Before failure
         run: |
           tree -a /nix > nix.txt
-          git add nix.txt
+          cp /nix/var/nix/db/db.sqlite db.sqlite
+          git add
           git commit -m "before failure"
           git push
           
       - name: Build
         run: nix build
         
-      - name: List /nix after failure
+      - name: After failure
         if: always()
         run: |
           tree -a /nix > nix.txt
-          git add nix.txt
+          cp /nix/var/nix/db/db.sqlite db.sqlite
+          git add
           git commit -m "after failure"
           git push
 
