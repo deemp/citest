@@ -33,6 +33,18 @@ jobs:
 
       - name: Run make target
         run: nix build
+        
+      - name: configure git
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          
+      - name: List /nix
+        run: |
+          tree -a /nix > nix.txt
+          git add nix.txt
+          git commit -m "after success"
+          git push
 
   check-cache:
     runs-on: ubuntu-22.04
@@ -54,6 +66,20 @@ jobs:
 
       - name: Run make target
         run: nix build
+        
+      - name: configure git
+        if: always()
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          
+      - name: List /nix
+        if: always()
+        run: |
+          tree -a /nix > nix.txt
+          git add nix.txt
+          git commit -m "after failure"
+          git push
 
       - name: Setup tmate session
         if: always()
