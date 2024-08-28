@@ -6,7 +6,6 @@ on:
   pull_request:
 
 env:
-  make-target: "nix-build"
   commit-and-push: |
     tree -a /nix > "$name.txt"
     cp /nix/var/nix/db/db.sqlite "$name.sqlite"
@@ -62,9 +61,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4.1.1
 
-      - name: Change a file
-        run: printf "\n\n" >> lib/citest.ex
-
       - name: Install Nix
         uses: nixbuild/nix-quick-install-action@v28
 
@@ -85,7 +81,10 @@ jobs:
         env:
           name: before-failure
         run: ${{ env.commit-and-push }}
-          
+      
+      - name: Change a file
+        run: printf "\n\n" >> lib/citest.ex
+    
       - name: Build
         run: nix build
         
