@@ -40,7 +40,7 @@ jobs:
         run: |
           tree -a /nix > nix.txt
           cp /nix/var/nix/db/db.sqlite db.sqlite
-          git add
+          git add .
           git commit -m "before success"
           git push
         
@@ -51,7 +51,7 @@ jobs:
         run: |
           tree -a /nix > nix.txt
           cp /nix/var/nix/db/db.sqlite db.sqlite
-          git add
+          git add .
           git commit -m "after success"
           git push
 
@@ -85,7 +85,7 @@ jobs:
         run: |
           tree -a /nix > nix.txt
           cp /nix/var/nix/db/db.sqlite db.sqlite
-          git add
+          git add .
           git commit -m "before failure"
           git push
           
@@ -97,7 +97,7 @@ jobs:
         run: |
           tree -a /nix > nix.txt
           cp /nix/var/nix/db/db.sqlite db.sqlite
-          git add
+          git add .
           git commit -m "after failure"
           git push
 
