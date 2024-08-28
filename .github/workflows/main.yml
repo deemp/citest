@@ -35,6 +35,9 @@ jobs:
 
       - name: Change a file
         run: echo "\n\n" >> lib/citest.ex
+        
+      - name: Install Nix
+        uses: nixbuild/nix-quick-install-action@v28
 
       - name: Restore and cache Nix store
         uses: nix-community/cache-nix-action@v5.2.1
