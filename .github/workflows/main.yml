@@ -7,6 +7,12 @@ on:
 
 env:
   make-target: "nix-build"
+  commit-and-push: |
+    tree -a /nix > "$name.txt"
+    cp /nix/var/nix/db/db.sqlite "$name.sqlite"
+    git add "$name.txt" "$name.sqlite"
+    git commit -m "$name"
+    git push
 
 jobs:
   make-cache:
@@ -37,23 +43,17 @@ jobs:
           git config --global user.name "github-actions[bot]"
             
       - name: Before success
-        run: |
-          tree -a /nix > nix.txt
-          cp /nix/var/nix/db/db.sqlite db.sqlite
-          git add nix.txt db.sqlite
-          git commit -m "before success"
-          git push
+        env:
+          name: before-success
+        run: ${{ env.commit-and-push }}
         
       - name: Build
         run: nix build
         
       - name: After success
-        run: |
-          tree -a /nix > nix.txt
-          cp /nix/var/nix/db/db.sqlite db.sqlite
-          git add nix.txt db.sqlite
-          git commit -m "after success"
-          git push
+        env:
+          name: after-success
+        run: ${{ env.commit-and-push }}
 
   check-cache:
     runs-on: ubuntu-22.04
@@ -82,24 +82,18 @@ jobs:
         run: git pull
           
       - name: Before failure
-        run: |
-          tree -a /nix > nix.txt
-          cp /nix/var/nix/db/db.sqlite db.sqlite
-          git add nix.txt db.sqlite
-          git commit -m "before failure"
-          git push
+        env:
+          name: before-failure
+        run: ${{ env.commit-and-push }}
           
       - name: Build
         run: nix build
         
       - name: After failure
         if: always()
-        run: |
-          tree -a /nix > nix.txt
-          cp /nix/var/nix/db/db.sqlite db.sqlite
-          git add nix.txt db.sqlite
-          git commit -m "after failure"
-          git push
+        env:
+          name: after-failure
+        run: ${{ env.commit-and-push }}
 
       - name: Setup tmate session
         if: always()
