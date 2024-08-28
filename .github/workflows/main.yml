@@ -5,11 +5,12 @@ on:
   push:
   pull_request:
 
+env:
+  make-target: "nix-build"
+
 jobs:
-  test-matrix:
+  make-cache:
     runs-on: ubuntu-22.04
-    env:
-      make-target: "nix-build"
 
     steps:
       - name: Checkout repository
@@ -19,14 +20,30 @@ jobs:
         uses: nixbuild/nix-quick-install-action@v28
 
       - name: Restore and cache Nix store
-        uses: nix-community/cache-nix-action@v5.2.0
-        id: restore
+        uses: nix-community/cache-nix-action@v5.2.1
         with:
           primary-key: similar-cache-individual-${{ env.make-target }}-${{ hashFiles('.github/workflows/main.yml') }}
 
       - name: Run make target
         run: nix build
-          
+
+  check-cache:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.1
+
+      - name: Change a file
+        run: echo "\n\n" >> lib/citest.ex
+
+      - name: Restore and cache Nix store
+        uses: nix-community/cache-nix-action@v5.2.1
+        with:
+          primary-key: similar-cache-individual-${{ env.make-target }}-${{ hashFiles('.github/workflows/main.yml') }}
+
+      - name: Run make target
+        run: nix build
+
       - name: Setup tmate session
         if: always()
         uses: mxschmitt/action-tmate@v3
