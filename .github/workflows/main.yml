@@ -22,7 +22,14 @@ jobs:
       - name: Restore and cache Nix store
         uses: nix-community/cache-nix-action@v5.2.1
         with:
-          primary-key: similar-cache-individual-${{ env.make-target }}-${{ hashFiles('.github/workflows/main.yml') }}
+          primary-key: similar-cache-individual-${{ hashFiles('.github/workflows/main.yml') }}
+          purge: true
+          # purge all versions of the cache
+          purge-prefixes: similar-cache-individual-
+          # created more than this number of seconds ago relative to the start of the `Post Restore` phase
+          purge-created: 0
+          # except the version with the `primary-key`, if it exists
+          purge-primary-key: never
 
       - name: Run make target
         run: nix build
@@ -42,7 +49,7 @@ jobs:
       - name: Restore and cache Nix store
         uses: nix-community/cache-nix-action@v5.2.1
         with:
-          primary-key: similar-cache-individual-${{ env.make-target }}-${{ hashFiles('.github/workflows/main.yml') }}
+          primary-key: similar-cache-individual-${{ hashFiles('.github/workflows/main.yml') }}
 
       - name: Run make target
         run: nix build
