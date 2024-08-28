@@ -1,0 +1,2192 @@
+/nix
+├── store
+│   ├── .links
+│   ├── 0cgs7y6qfn64wvj1wk37zadniq2dqkg4-brotli-1.1.0-lib
+│   │   └── lib
+│   │       ├── libbrotlicommon.so -> libbrotlicommon.so.1
+│   │       ├── libbrotlicommon.so.1 -> libbrotlicommon.so.1.1.0
+│   │       ├── libbrotlicommon.so.1.1.0
+│   │       ├── libbrotlidec.so -> libbrotlidec.so.1
+│   │       ├── libbrotlidec.so.1 -> libbrotlidec.so.1.1.0
+│   │       ├── libbrotlidec.so.1.1.0
+│   │       ├── libbrotlienc.so -> libbrotlienc.so.1
+│   │       ├── libbrotlienc.so.1 -> libbrotlienc.so.1.1.0
+│   │       └── libbrotlienc.so.1.1.0
+│   ├── 0xlln0w88b6xhlszr4qm78jfcis33i8h-publicsuffix-list-0-unstable-2024-01-07
+│   │   └── share
+│   │       └── publicsuffix
+│   │           ├── public_suffix_list.dat
+│   │           └── test_psl.txt
+│   ├── 1rj3qz0jhx6ljks9ayy8mmwyypqdzp4z-libsodium-1.0.19
+│   │   └── lib
+│   │       ├── libsodium.la
+│   │       ├── libsodium.so -> libsodium.so.26.1.0
+│   │       ├── libsodium.so.26 -> libsodium.so.26.1.0
+│   │       └── libsodium.so.26.1.0
+│   ├── 1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44
+│   │   ├── etc
+│   │   │   └── rpc
+│   │   ├── lib
+│   │   │   ├── Mcrt1.o
+│   │   │   ├── Scrt1.o
+│   │   │   ├── audit
+│   │   │   │   └── sotruss-lib.so
+│   │   │   ├── crt1.o
+│   │   │   ├── crti.o
+│   │   │   ├── crtn.o
+│   │   │   ├── gconv
+│   │   │   │   ├── ANSI_X3.110.so
+│   │   │   │   ├── ARMSCII-8.so
+│   │   │   │   ├── ASMO_449.so
+│   │   │   │   ├── BIG5.so
+│   │   │   │   ├── BIG5HKSCS.so
+│   │   │   │   ├── BRF.so
+│   │   │   │   ├── CP10007.so
+│   │   │   │   ├── CP1125.so
+│   │   │   │   ├── CP1250.so
+│   │   │   │   ├── CP1251.so
+│   │   │   │   ├── CP1252.so
+│   │   │   │   ├── CP1253.so
+│   │   │   │   ├── CP1254.so
+│   │   │   │   ├── CP1255.so
+│   │   │   │   ├── CP1256.so
+│   │   │   │   ├── CP1257.so
+│   │   │   │   ├── CP1258.so
+│   │   │   │   ├── CP737.so
+│   │   │   │   ├── CP770.so
+│   │   │   │   ├── CP771.so
+│   │   │   │   ├── CP772.so
+│   │   │   │   ├── CP773.so
+│   │   │   │   ├── CP774.so
+│   │   │   │   ├── CP775.so
+│   │   │   │   ├── CP932.so
+│   │   │   │   ├── CSN_369103.so
+│   │   │   │   ├── CWI.so
+│   │   │   │   ├── DEC-MCS.so
+│   │   │   │   ├── EBCDIC-AT-DE-A.so
+│   │   │   │   ├── EBCDIC-AT-DE.so
+│   │   │   │   ├── EBCDIC-CA-FR.so
+│   │   │   │   ├── EBCDIC-DK-NO-A.so
+│   │   │   │   ├── EBCDIC-DK-NO.so
+│   │   │   │   ├── EBCDIC-ES-A.so
+│   │   │   │   ├── EBCDIC-ES-S.so
+│   │   │   │   ├── EBCDIC-ES.so
+│   │   │   │   ├── EBCDIC-FI-SE-A.so
+│   │   │   │   ├── EBCDIC-FI-SE.so
+│   │   │   │   ├── EBCDIC-FR.so
+│   │   │   │   ├── EBCDIC-IS-FRISS.so
+│   │   │   │   ├── EBCDIC-IT.so
+│   │   │   │   ├── EBCDIC-PT.so
+│   │   │   │   ├── EBCDIC-UK.so
+│   │   │   │   ├── EBCDIC-US.so
+│   │   │   │   ├── ECMA-CYRILLIC.so
+│   │   │   │   ├── EUC-CN.so
+│   │   │   │   ├── EUC-JISX0213.so
+│   │   │   │   ├── EUC-JP-MS.so
+│   │   │   │   ├── EUC-JP.so
+│   │   │   │   ├── EUC-KR.so
+│   │   │   │   ├── EUC-TW.so
+│   │   │   │   ├── GB18030.so
+│   │   │   │   ├── GBBIG5.so
+│   │   │   │   ├── GBGBK.so
+│   │   │   │   ├── GBK.so
+│   │   │   │   ├── GEORGIAN-ACADEMY.so
+│   │   │   │   ├── GEORGIAN-PS.so
+│   │   │   │   ├── GOST_19768-74.so
+│   │   │   │   ├── GREEK-CCITT.so
+│   │   │   │   ├── GREEK7-OLD.so
+│   │   │   │   ├── GREEK7.so
+│   │   │   │   ├── HP-GREEK8.so
+│   │   │   │   ├── HP-ROMAN8.so
+│   │   │   │   ├── HP-ROMAN9.so
+│   │   │   │   ├── HP-THAI8.so
+│   │   │   │   ├── HP-TURKISH8.so
+│   │   │   │   ├── IBM037.so
+│   │   │   │   ├── IBM038.so
+│   │   │   │   ├── IBM1004.so
+│   │   │   │   ├── IBM1008.so
+│   │   │   │   ├── IBM1008_420.so
+│   │   │   │   ├── IBM1025.so
+│   │   │   │   ├── IBM1026.so
+│   │   │   │   ├── IBM1046.so
+│   │   │   │   ├── IBM1047.so
+│   │   │   │   ├── IBM1097.so
+│   │   │   │   ├── IBM1112.so
+│   │   │   │   ├── IBM1122.so
+│   │   │   │   ├── IBM1123.so
+│   │   │   │   ├── IBM1124.so
+│   │   │   │   ├── IBM1129.so
+│   │   │   │   ├── IBM1130.so
+│   │   │   │   ├── IBM1132.so
+│   │   │   │   ├── IBM1133.so
+│   │   │   │   ├── IBM1137.so
+│   │   │   │   ├── IBM1140.so
+│   │   │   │   ├── IBM1141.so
+│   │   │   │   ├── IBM1142.so
+│   │   │   │   ├── IBM1143.so
+│   │   │   │   ├── IBM1144.so
+│   │   │   │   ├── IBM1145.so
+│   │   │   │   ├── IBM1146.so
+│   │   │   │   ├── IBM1147.so
+│   │   │   │   ├── IBM1148.so
+│   │   │   │   ├── IBM1149.so
+│   │   │   │   ├── IBM1153.so
+│   │   │   │   ├── IBM1154.so
+│   │   │   │   ├── IBM1155.so
+│   │   │   │   ├── IBM1156.so
+│   │   │   │   ├── IBM1157.so
+│   │   │   │   ├── IBM1158.so
+│   │   │   │   ├── IBM1160.so
+│   │   │   │   ├── IBM1161.so
+│   │   │   │   ├── IBM1162.so
+│   │   │   │   ├── IBM1163.so
+│   │   │   │   ├── IBM1164.so
+│   │   │   │   ├── IBM1166.so
+│   │   │   │   ├── IBM1167.so
+│   │   │   │   ├── IBM12712.so
+│   │   │   │   ├── IBM1364.so
+│   │   │   │   ├── IBM1371.so
+│   │   │   │   ├── IBM1388.so
+│   │   │   │   ├── IBM1390.so
+│   │   │   │   ├── IBM1399.so
+│   │   │   │   ├── IBM16804.so
+│   │   │   │   ├── IBM256.so
+│   │   │   │   ├── IBM273.so
+│   │   │   │   ├── IBM274.so
+│   │   │   │   ├── IBM275.so
+│   │   │   │   ├── IBM277.so
+│   │   │   │   ├── IBM278.so
+│   │   │   │   ├── IBM280.so
+│   │   │   │   ├── IBM281.so
+│   │   │   │   ├── IBM284.so
+│   │   │   │   ├── IBM285.so
+│   │   │   │   ├── IBM290.so
+│   │   │   │   ├── IBM297.so
+│   │   │   │   ├── IBM420.so
+│   │   │   │   ├── IBM423.so
+│   │   │   │   ├── IBM424.so
+│   │   │   │   ├── IBM437.so
+│   │   │   │   ├── IBM4517.so
+│   │   │   │   ├── IBM4899.so
+│   │   │   │   ├── IBM4909.so
+│   │   │   │   ├── IBM4971.so
+│   │   │   │   ├── IBM500.so
+│   │   │   │   ├── IBM5347.so
+│   │   │   │   ├── IBM803.so
+│   │   │   │   ├── IBM850.so
+│   │   │   │   ├── IBM851.so
+│   │   │   │   ├── IBM852.so
+│   │   │   │   ├── IBM855.so
+│   │   │   │   ├── IBM856.so
+│   │   │   │   ├── IBM857.so
+│   │   │   │   ├── IBM858.so
+│   │   │   │   ├── IBM860.so
+│   │   │   │   ├── IBM861.so
+│   │   │   │   ├── IBM862.so
+│   │   │   │   ├── IBM863.so
+│   │   │   │   ├── IBM864.so
+│   │   │   │   ├── IBM865.so
+│   │   │   │   ├── IBM866.so
+│   │   │   │   ├── IBM866NAV.so
+│   │   │   │   ├── IBM868.so
+│   │   │   │   ├── IBM869.so
+│   │   │   │   ├── IBM870.so
+│   │   │   │   ├── IBM871.so
+│   │   │   │   ├── IBM874.so
+│   │   │   │   ├── IBM875.so
+│   │   │   │   ├── IBM880.so
+│   │   │   │   ├── IBM891.so
+│   │   │   │   ├── IBM901.so
+│   │   │   │   ├── IBM902.so
+│   │   │   │   ├── IBM903.so
+│   │   │   │   ├── IBM9030.so
+│   │   │   │   ├── IBM904.so
+│   │   │   │   ├── IBM905.so
+│   │   │   │   ├── IBM9066.so
+│   │   │   │   ├── IBM918.so
+│   │   │   │   ├── IBM921.so
+│   │   │   │   ├── IBM922.so
+│   │   │   │   ├── IBM930.so
+│   │   │   │   ├── IBM932.so
+│   │   │   │   ├── IBM933.so
+│   │   │   │   ├── IBM935.so
+│   │   │   │   ├── IBM937.so
+│   │   │   │   ├── IBM939.so
+│   │   │   │   ├── IBM943.so
+│   │   │   │   ├── IBM9448.so
+│   │   │   │   ├── IEC_P27-1.so
+│   │   │   │   ├── INIS-8.so
+│   │   │   │   ├── INIS-CYRILLIC.so
+│   │   │   │   ├── INIS.so
+│   │   │   │   ├── ISIRI-3342.so
+│   │   │   │   ├── ISO-2022-CN-EXT.so
+│   │   │   │   ├── ISO-2022-CN.so
+│   │   │   │   ├── ISO-2022-JP-3.so
+│   │   │   │   ├── ISO-2022-JP.so
+│   │   │   │   ├── ISO-2022-KR.so
+│   │   │   │   ├── ISO-IR-197.so
+│   │   │   │   ├── ISO-IR-209.so
+│   │   │   │   ├── ISO646.so
+│   │   │   │   ├── ISO8859-1.so
+│   │   │   │   ├── ISO8859-10.so
+│   │   │   │   ├── ISO8859-11.so
+│   │   │   │   ├── ISO8859-13.so
+│   │   │   │   ├── ISO8859-14.so
+│   │   │   │   ├── ISO8859-15.so
+│   │   │   │   ├── ISO8859-16.so
+│   │   │   │   ├── ISO8859-2.so
+│   │   │   │   ├── ISO8859-3.so
+│   │   │   │   ├── ISO8859-4.so
+│   │   │   │   ├── ISO8859-5.so
+│   │   │   │   ├── ISO8859-6.so
+│   │   │   │   ├── ISO8859-7.so
+│   │   │   │   ├── ISO8859-8.so
+│   │   │   │   ├── ISO8859-9.so
+│   │   │   │   ├── ISO8859-9E.so
+│   │   │   │   ├── ISO_10367-BOX.so
+│   │   │   │   ├── ISO_11548-1.so
+│   │   │   │   ├── ISO_2033.so
+│   │   │   │   ├── ISO_5427-EXT.so
+│   │   │   │   ├── ISO_5427.so
+│   │   │   │   ├── ISO_5428.so
+│   │   │   │   ├── ISO_6937-2.so
+│   │   │   │   ├── ISO_6937.so
+│   │   │   │   ├── JOHAB.so
+│   │   │   │   ├── KOI-8.so
+│   │   │   │   ├── KOI8-R.so
+│   │   │   │   ├── KOI8-RU.so
+│   │   │   │   ├── KOI8-T.so
+│   │   │   │   ├── KOI8-U.so
+│   │   │   │   ├── LATIN-GREEK-1.so
+│   │   │   │   ├── LATIN-GREEK.so
+│   │   │   │   ├── MAC-CENTRALEUROPE.so
+│   │   │   │   ├── MAC-IS.so
+│   │   │   │   ├── MAC-SAMI.so
+│   │   │   │   ├── MAC-UK.so
+│   │   │   │   ├── MACINTOSH.so
+│   │   │   │   ├── MIK.so
+│   │   │   │   ├── NATS-DANO.so
+│   │   │   │   ├── NATS-SEFI.so
+│   │   │   │   ├── PT154.so
+│   │   │   │   ├── RK1048.so
+│   │   │   │   ├── SAMI-WS2.so
+│   │   │   │   ├── SHIFT_JISX0213.so
+│   │   │   │   ├── SJIS.so
+│   │   │   │   ├── T.61.so
+│   │   │   │   ├── TCVN5712-1.so
+│   │   │   │   ├── TIS-620.so
+│   │   │   │   ├── TSCII.so
+│   │   │   │   ├── UHC.so
+│   │   │   │   ├── UNICODE.so
+│   │   │   │   ├── UTF-16.so
+│   │   │   │   ├── UTF-32.so
+│   │   │   │   ├── UTF-7.so
+│   │   │   │   ├── VISCII.so
+│   │   │   │   ├── gconv-modules
+│   │   │   │   ├── gconv-modules.d
+│   │   │   │   │   └── gconv-modules-extra.conf
+│   │   │   │   ├── libCNS.so
+│   │   │   │   ├── libGB.so
+│   │   │   │   ├── libISOIR165.so
+│   │   │   │   ├── libJIS.so
+│   │   │   │   ├── libJISX0213.so
+│   │   │   │   └── libKSC.so
+│   │   │   ├── gcrt1.o
+│   │   │   ├── grcrt1.o
+│   │   │   ├── ld-linux-x86-64.so.2
+│   │   │   ├── libBrokenLocale.so -> libBrokenLocale.so.1
+│   │   │   ├── libBrokenLocale.so.1
+│   │   │   ├── libanl.so -> libanl.so.1
+│   │   │   ├── libanl.so.1
+│   │   │   ├── libc.so
+│   │   │   ├── libc.so.6
+│   │   │   ├── libc_malloc_debug.so -> libc_malloc_debug.so.0
+│   │   │   ├── libc_malloc_debug.so.0
+│   │   │   ├── libc_nonshared.a
+│   │   │   ├── libdl.so -> libdl.so.2
+│   │   │   ├── libdl.so.2
+│   │   │   ├── libm.so
+│   │   │   ├── libm.so.6
+│   │   │   ├── libmemusage.so
+│   │   │   ├── libmvec.so -> libmvec.so.1
+│   │   │   ├── libmvec.so.1
+│   │   │   ├── libnsl.so.1
+│   │   │   ├── libnss_compat.so -> libnss_compat.so.2
+│   │   │   ├── libnss_compat.so.2
+│   │   │   ├── libnss_db.so -> libnss_db.so.2
+│   │   │   ├── libnss_db.so.2
+│   │   │   ├── libnss_dns.so.2
+│   │   │   ├── libnss_files.so.2
+│   │   │   ├── libnss_hesiod.so -> libnss_hesiod.so.2
+│   │   │   ├── libnss_hesiod.so.2
+│   │   │   ├── libpcprofile.so
+│   │   │   ├── libpthread.so -> libpthread.so.0
+│   │   │   ├── libpthread.so.0
+│   │   │   ├── libresolv.so -> libresolv.so.2
+│   │   │   ├── libresolv.so.2
+│   │   │   ├── librt.so -> librt.so.1
+│   │   │   ├── librt.so.1
+│   │   │   ├── libthread_db.so -> libthread_db.so.1
+│   │   │   ├── libthread_db.so.1
+│   │   │   ├── libutil.so -> libutil.so.1
+│   │   │   ├── libutil.so.1
+│   │   │   ├── locale
+│   │   │   │   └── locale-archive
+│   │   │   └── rcrt1.o
+│   │   ├── lib64 -> lib
+│   │   ├── libexec
+│   │   │   └── getconf
+│   │   │       ├── POSIX_V6_LP64_OFF64
+│   │   │       ├── POSIX_V7_LP64_OFF64
+│   │   │       └── XBS5_LP64_OFF64
+│   │   └── share
+│   │       ├── i18n
+│   │       │   ├── charmaps
+│   │       │   │   ├── ANSI_X3.110-1983.gz
+│   │       │   │   ├── ANSI_X3.4-1968.gz
+│   │       │   │   ├── ARMSCII-8.gz
+│   │       │   │   ├── ASMO_449.gz
+│   │       │   │   ├── BIG5-HKSCS.gz
+│   │       │   │   ├── BIG5.gz
+│   │       │   │   ├── BRF.gz
+│   │       │   │   ├── BS_4730.gz
+│   │       │   │   ├── BS_VIEWDATA.gz
+│   │       │   │   ├── CP10007.gz
+│   │       │   │   ├── CP1125.gz
+│   │       │   │   ├── CP1250.gz
+│   │       │   │   ├── CP1251.gz
+│   │       │   │   ├── CP1252.gz
+│   │       │   │   ├── CP1253.gz
+│   │       │   │   ├── CP1254.gz
+│   │       │   │   ├── CP1255.gz
+│   │       │   │   ├── CP1256.gz
+│   │       │   │   ├── CP1257.gz
+│   │       │   │   ├── CP1258.gz
+│   │       │   │   ├── CP737.gz
+│   │       │   │   ├── CP770.gz
+│   │       │   │   ├── CP771.gz
+│   │       │   │   ├── CP772.gz
+│   │       │   │   ├── CP773.gz
+│   │       │   │   ├── CP774.gz
+│   │       │   │   ├── CP775.gz
+│   │       │   │   ├── CP949.gz
+│   │       │   │   ├── CSA_Z243.4-1985-1.gz
+│   │       │   │   ├── CSA_Z243.4-1985-2.gz
+│   │       │   │   ├── CSA_Z243.4-1985-GR.gz
+│   │       │   │   ├── CSN_369103.gz
+│   │       │   │   ├── CWI.gz
+│   │       │   │   ├── DEC-MCS.gz
+│   │       │   │   ├── DIN_66003.gz
+│   │       │   │   ├── DS_2089.gz
+│   │       │   │   ├── EBCDIC-AT-DE-A.gz
+│   │       │   │   ├── EBCDIC-AT-DE.gz
+│   │       │   │   ├── EBCDIC-CA-FR.gz
+│   │       │   │   ├── EBCDIC-DK-NO-A.gz
+│   │       │   │   ├── EBCDIC-DK-NO.gz
+│   │       │   │   ├── EBCDIC-ES-A.gz
+│   │       │   │   ├── EBCDIC-ES-S.gz
+│   │       │   │   ├── EBCDIC-ES.gz
+│   │       │   │   ├── EBCDIC-FI-SE-A.gz
+│   │       │   │   ├── EBCDIC-FI-SE.gz
+│   │       │   │   ├── EBCDIC-FR.gz
+│   │       │   │   ├── EBCDIC-IS-FRISS.gz
+│   │       │   │   ├── EBCDIC-IT.gz
+│   │       │   │   ├── EBCDIC-PT.gz
+│   │       │   │   ├── EBCDIC-UK.gz
+│   │       │   │   ├── EBCDIC-US.gz
+│   │       │   │   ├── ECMA-CYRILLIC.gz
+│   │       │   │   ├── ES.gz
+│   │       │   │   ├── ES2.gz
+│   │       │   │   ├── EUC-JISX0213.gz
+│   │       │   │   ├── EUC-JP-MS.gz
+│   │       │   │   ├── EUC-JP.gz
+│   │       │   │   ├── EUC-KR.gz
+│   │       │   │   ├── EUC-TW.gz
+│   │       │   │   ├── GB18030.gz
+│   │       │   │   ├── GB2312.gz
+│   │       │   │   ├── GBK.gz
+│   │       │   │   ├── GB_1988-80.gz
+│   │       │   │   ├── GEORGIAN-ACADEMY.gz
+│   │       │   │   ├── GEORGIAN-PS.gz
+│   │       │   │   ├── GOST_19768-74.gz
+│   │       │   │   ├── GREEK-CCITT.gz
+│   │       │   │   ├── GREEK7-OLD.gz
+│   │       │   │   ├── GREEK7.gz
+│   │       │   │   ├── HP-GREEK8.gz
+│   │       │   │   ├── HP-ROMAN8.gz
+│   │       │   │   ├── HP-ROMAN9.gz
+│   │       │   │   ├── HP-THAI8.gz
+│   │       │   │   ├── HP-TURKISH8.gz
+│   │       │   │   ├── IBM037.gz
+│   │       │   │   ├── IBM038.gz
+│   │       │   │   ├── IBM1004.gz
+│   │       │   │   ├── IBM1026.gz
+│   │       │   │   ├── IBM1047.gz
+│   │       │   │   ├── IBM1124.gz
+│   │       │   │   ├── IBM1129.gz
+│   │       │   │   ├── IBM1132.gz
+│   │       │   │   ├── IBM1133.gz
+│   │       │   │   ├── IBM1160.gz
+│   │       │   │   ├── IBM1161.gz
+│   │       │   │   ├── IBM1162.gz
+│   │       │   │   ├── IBM1163.gz
+│   │       │   │   ├── IBM1164.gz
+│   │       │   │   ├── IBM256.gz
+│   │       │   │   ├── IBM273.gz
+│   │       │   │   ├── IBM274.gz
+│   │       │   │   ├── IBM275.gz
+│   │       │   │   ├── IBM277.gz
+│   │       │   │   ├── IBM278.gz
+│   │       │   │   ├── IBM280.gz
+│   │       │   │   ├── IBM281.gz
+│   │       │   │   ├── IBM284.gz
+│   │       │   │   ├── IBM285.gz
+│   │       │   │   ├── IBM290.gz
+│   │       │   │   ├── IBM297.gz
+│   │       │   │   ├── IBM420.gz
+│   │       │   │   ├── IBM423.gz
+│   │       │   │   ├── IBM424.gz
+│   │       │   │   ├── IBM437.gz
+│   │       │   │   ├── IBM500.gz
+│   │       │   │   ├── IBM850.gz
+│   │       │   │   ├── IBM851.gz
+│   │       │   │   ├── IBM852.gz
+│   │       │   │   ├── IBM855.gz
+│   │       │   │   ├── IBM856.gz
+│   │       │   │   ├── IBM857.gz
+│   │       │   │   ├── IBM858.gz
+│   │       │   │   ├── IBM860.gz
+│   │       │   │   ├── IBM861.gz
+│   │       │   │   ├── IBM862.gz
+│   │       │   │   ├── IBM863.gz
+│   │       │   │   ├── IBM864.gz
+│   │       │   │   ├── IBM865.gz
+│   │       │   │   ├── IBM866.gz
+│   │       │   │   ├── IBM866NAV.gz
+│   │       │   │   ├── IBM868.gz
+│   │       │   │   ├── IBM869.gz
+│   │       │   │   ├── IBM870.gz
+│   │       │   │   ├── IBM871.gz
+│   │       │   │   ├── IBM874.gz
+│   │       │   │   ├── IBM875.gz
+│   │       │   │   ├── IBM880.gz
+│   │       │   │   ├── IBM891.gz
+│   │       │   │   ├── IBM903.gz
+│   │       │   │   ├── IBM904.gz
+│   │       │   │   ├── IBM905.gz
+│   │       │   │   ├── IBM918.gz
+│   │       │   │   ├── IBM922.gz
+│   │       │   │   ├── IEC_P27-1.gz
+│   │       │   │   ├── INIS-8.gz
+│   │       │   │   ├── INIS-CYRILLIC.gz
+│   │       │   │   ├── INIS.gz
+│   │       │   │   ├── INVARIANT.gz
+│   │       │   │   ├── ISIRI-3342.gz
+│   │       │   │   ├── ISO-8859-1.gz
+│   │       │   │   ├── ISO-8859-10.gz
+│   │       │   │   ├── ISO-8859-11.gz
+│   │       │   │   ├── ISO-8859-13.gz
+│   │       │   │   ├── ISO-8859-14.gz
+│   │       │   │   ├── ISO-8859-15.gz
+│   │       │   │   ├── ISO-8859-16.gz
+│   │       │   │   ├── ISO-8859-2.gz
+│   │       │   │   ├── ISO-8859-3.gz
+│   │       │   │   ├── ISO-8859-4.gz
+│   │       │   │   ├── ISO-8859-5.gz
+│   │       │   │   ├── ISO-8859-6.gz
+│   │       │   │   ├── ISO-8859-7.gz
+│   │       │   │   ├── ISO-8859-8.gz
+│   │       │   │   ├── ISO-8859-9.gz
+│   │       │   │   ├── ISO-8859-9E.gz
+│   │       │   │   ├── ISO-IR-197.gz
+│   │       │   │   ├── ISO-IR-209.gz
+│   │       │   │   ├── ISO-IR-90.gz
+│   │       │   │   ├── ISO_10367-BOX.gz
+│   │       │   │   ├── ISO_10646.gz
+│   │       │   │   ├── ISO_11548-1.gz
+│   │       │   │   ├── ISO_2033-1983.gz
+│   │       │   │   ├── ISO_5427-EXT.gz
+│   │       │   │   ├── ISO_5427.gz
+│   │       │   │   ├── ISO_5428.gz
+│   │       │   │   ├── ISO_646.BASIC.gz
+│   │       │   │   ├── ISO_646.IRV.gz
+│   │       │   │   ├── ISO_6937-2-25.gz
+│   │       │   │   ├── ISO_6937-2-ADD.gz
+│   │       │   │   ├── ISO_6937.gz
+│   │       │   │   ├── ISO_8859-1,GL.gz
+│   │       │   │   ├── ISO_8859-SUPP.gz
+│   │       │   │   ├── IT.gz
+│   │       │   │   ├── JIS_C6220-1969-JP.gz
+│   │       │   │   ├── JIS_C6220-1969-RO.gz
+│   │       │   │   ├── JIS_C6229-1984-A.gz
+│   │       │   │   ├── JIS_C6229-1984-B-ADD.gz
+│   │       │   │   ├── JIS_C6229-1984-B.gz
+│   │       │   │   ├── JIS_C6229-1984-HAND-ADD.gz
+│   │       │   │   ├── JIS_C6229-1984-HAND.gz
+│   │       │   │   ├── JIS_C6229-1984-KANA.gz
+│   │       │   │   ├── JIS_X0201.gz
+│   │       │   │   ├── JOHAB.gz
+│   │       │   │   ├── JUS_I.B1.002.gz
+│   │       │   │   ├── JUS_I.B1.003-MAC.gz
+│   │       │   │   ├── JUS_I.B1.003-SERB.gz
+│   │       │   │   ├── KOI-8.gz
+│   │       │   │   ├── KOI8-R.gz
+│   │       │   │   ├── KOI8-RU.gz
+│   │       │   │   ├── KOI8-T.gz
+│   │       │   │   ├── KOI8-U.gz
+│   │       │   │   ├── KSC5636.gz
+│   │       │   │   ├── LATIN-GREEK-1.gz
+│   │       │   │   ├── LATIN-GREEK.gz
+│   │       │   │   ├── MAC-CENTRALEUROPE.gz
+│   │       │   │   ├── MAC-CYRILLIC.gz
+│   │       │   │   ├── MAC-IS.gz
+│   │       │   │   ├── MAC-SAMI.gz
+│   │       │   │   ├── MAC-UK.gz
+│   │       │   │   ├── MACINTOSH.gz
+│   │       │   │   ├── MIK.gz
+│   │       │   │   ├── MSZ_7795.3.gz
+│   │       │   │   ├── NATS-DANO-ADD.gz
+│   │       │   │   ├── NATS-DANO.gz
+│   │       │   │   ├── NATS-SEFI-ADD.gz
+│   │       │   │   ├── NATS-SEFI.gz
+│   │       │   │   ├── NC_NC00-10.gz
+│   │       │   │   ├── NEXTSTEP.gz
+│   │       │   │   ├── NF_Z_62-010.gz
+│   │       │   │   ├── NF_Z_62-010_1973.gz
+│   │       │   │   ├── NS_4551-1.gz
+│   │       │   │   ├── NS_4551-2.gz
+│   │       │   │   ├── PT.gz
+│   │       │   │   ├── PT154.gz
+│   │       │   │   ├── PT2.gz
+│   │       │   │   ├── RK1048.gz
+│   │       │   │   ├── SAMI-WS2.gz
+│   │       │   │   ├── SAMI.gz
+│   │       │   │   ├── SEN_850200_B.gz
+│   │       │   │   ├── SEN_850200_C.gz
+│   │       │   │   ├── SHIFT_JIS.gz
+│   │       │   │   ├── SHIFT_JISX0213.gz
+│   │       │   │   ├── T.101-G2.gz
+│   │       │   │   ├── T.61-7BIT.gz
+│   │       │   │   ├── T.61-8BIT.gz
+│   │       │   │   ├── TCVN5712-1.gz
+│   │       │   │   ├── TIS-620.gz
+│   │       │   │   ├── TSCII.gz
+│   │       │   │   ├── UTF-8.gz
+│   │       │   │   ├── VIDEOTEX-SUPPL.gz
+│   │       │   │   ├── VISCII.gz
+│   │       │   │   └── WINDOWS-31J.gz
+│   │       │   └── locales
+│   │       │       ├── C
+│   │       │       ├── POSIX
+│   │       │       ├── aa_DJ
+│   │       │       ├── aa_ER
+│   │       │       ├── aa_ER@saaho
+│   │       │       ├── aa_ET
+│   │       │       ├── ab_GE
+│   │       │       ├── af_ZA
+│   │       │       ├── agr_PE
+│   │       │       ├── ak_GH
+│   │       │       ├── am_ET
+│   │       │       ├── an_ES
+│   │       │       ├── anp_IN
+│   │       │       ├── ar_AE
+│   │       │       ├── ar_BH
+│   │       │       ├── ar_DZ
+│   │       │       ├── ar_EG
+│   │       │       ├── ar_IN
+│   │       │       ├── ar_IQ
+│   │       │       ├── ar_JO
+│   │       │       ├── ar_KW
+│   │       │       ├── ar_LB
+│   │       │       ├── ar_LY
+│   │       │       ├── ar_MA
+│   │       │       ├── ar_OM
+│   │       │       ├── ar_QA
+│   │       │       ├── ar_SA
+│   │       │       ├── ar_SD
+│   │       │       ├── ar_SS
+│   │       │       ├── ar_SY
+│   │       │       ├── ar_TN
+│   │       │       ├── ar_YE
+│   │       │       ├── as_IN
+│   │       │       ├── ast_ES
+│   │       │       ├── ayc_PE
+│   │       │       ├── az_AZ
+│   │       │       ├── az_IR
+│   │       │       ├── be_BY
+│   │       │       ├── be_BY@latin
+│   │       │       ├── bem_ZM
+│   │       │       ├── ber_DZ
+│   │       │       ├── ber_MA
+│   │       │       ├── bg_BG
+│   │       │       ├── bhb_IN
+│   │       │       ├── bho_IN
+│   │       │       ├── bho_NP
+│   │       │       ├── bi_VU
+│   │       │       ├── bn_BD
+│   │       │       ├── bn_IN
+│   │       │       ├── bo_CN
+│   │       │       ├── bo_IN
+│   │       │       ├── br_FR
+│   │       │       ├── br_FR@euro
+│   │       │       ├── brx_IN
+│   │       │       ├── bs_BA
+│   │       │       ├── byn_ER
+│   │       │       ├── ca_AD
+│   │       │       ├── ca_ES
+│   │       │       ├── ca_ES@euro
+│   │       │       ├── ca_ES@valencia
+│   │       │       ├── ca_FR
+│   │       │       ├── ca_IT
+│   │       │       ├── ce_RU
+│   │       │       ├── chr_US
+│   │       │       ├── ckb_IQ
+│   │       │       ├── cmn_TW
+│   │       │       ├── cns11643_stroke
+│   │       │       ├── crh_UA
+│   │       │       ├── cs_CZ
+│   │       │       ├── csb_PL
+│   │       │       ├── cv_RU
+│   │       │       ├── cy_GB
+│   │       │       ├── da_DK
+│   │       │       ├── de_AT
+│   │       │       ├── de_AT@euro
+│   │       │       ├── de_BE
+│   │       │       ├── de_BE@euro
+│   │       │       ├── de_CH
+│   │       │       ├── de_DE
+│   │       │       ├── de_DE@euro
+│   │       │       ├── de_IT
+│   │       │       ├── de_LI
+│   │       │       ├── de_LU
+│   │       │       ├── de_LU@euro
+│   │       │       ├── doi_IN
+│   │       │       ├── dsb_DE
+│   │       │       ├── dv_MV
+│   │       │       ├── dz_BT
+│   │       │       ├── el_CY
+│   │       │       ├── el_GR
+│   │       │       ├── el_GR@euro
+│   │       │       ├── en_AG
+│   │       │       ├── en_AU
+│   │       │       ├── en_BW
+│   │       │       ├── en_CA
+│   │       │       ├── en_DK
+│   │       │       ├── en_GB
+│   │       │       ├── en_HK
+│   │       │       ├── en_IE
+│   │       │       ├── en_IE@euro
+│   │       │       ├── en_IL
+│   │       │       ├── en_IN
+│   │       │       ├── en_NG
+│   │       │       ├── en_NZ
+│   │       │       ├── en_PH
+│   │       │       ├── en_SC
+│   │       │       ├── en_SG
+│   │       │       ├── en_US
+│   │       │       ├── en_ZA
+│   │       │       ├── en_ZM
+│   │       │       ├── en_ZW
+│   │       │       ├── eo
+│   │       │       ├── es_AR
+│   │       │       ├── es_BO
+│   │       │       ├── es_CL
+│   │       │       ├── es_CO
+│   │       │       ├── es_CR
+│   │       │       ├── es_CU
+│   │       │       ├── es_DO
+│   │       │       ├── es_EC
+│   │       │       ├── es_ES
+│   │       │       ├── es_ES@euro
+│   │       │       ├── es_GT
+│   │       │       ├── es_HN
+│   │       │       ├── es_MX
+│   │       │       ├── es_NI
+│   │       │       ├── es_PA
+│   │       │       ├── es_PE
+│   │       │       ├── es_PR
+│   │       │       ├── es_PY
+│   │       │       ├── es_SV
+│   │       │       ├── es_US
+│   │       │       ├── es_UY
+│   │       │       ├── es_VE
+│   │       │       ├── et_EE
+│   │       │       ├── eu_ES
+│   │       │       ├── eu_ES@euro
+│   │       │       ├── fa_IR
+│   │       │       ├── ff_SN
+│   │       │       ├── fi_FI
+│   │       │       ├── fi_FI@euro
+│   │       │       ├── fil_PH
+│   │       │       ├── fo_FO
+│   │       │       ├── fr_BE
+│   │       │       ├── fr_BE@euro
+│   │       │       ├── fr_CA
+│   │       │       ├── fr_CH
+│   │       │       ├── fr_FR
+│   │       │       ├── fr_FR@euro
+│   │       │       ├── fr_LU
+│   │       │       ├── fr_LU@euro
+│   │       │       ├── fur_IT
+│   │       │       ├── fy_DE
+│   │       │       ├── fy_NL
+│   │       │       ├── ga_IE
+│   │       │       ├── ga_IE@euro
+│   │       │       ├── gd_GB
+│   │       │       ├── gez_ER
+│   │       │       ├── gez_ER@abegede
+│   │       │       ├── gez_ET
+│   │       │       ├── gez_ET@abegede
+│   │       │       ├── gl_ES
+│   │       │       ├── gl_ES@euro
+│   │       │       ├── gu_IN
+│   │       │       ├── gv_GB
+│   │       │       ├── ha_NG
+│   │       │       ├── hak_TW
+│   │       │       ├── he_IL
+│   │       │       ├── hi_IN
+│   │       │       ├── hif_FJ
+│   │       │       ├── hne_IN
+│   │       │       ├── hr_HR
+│   │       │       ├── hsb_DE
+│   │       │       ├── ht_HT
+│   │       │       ├── hu_HU
+│   │       │       ├── hy_AM
+│   │       │       ├── i18n
+│   │       │       ├── i18n_ctype
+│   │       │       ├── ia_FR
+│   │       │       ├── id_ID
+│   │       │       ├── ig_NG
+│   │       │       ├── ik_CA
+│   │       │       ├── is_IS
+│   │       │       ├── iso14651_t1
+│   │       │       ├── iso14651_t1_common
+│   │       │       ├── iso14651_t1_pinyin
+│   │       │       ├── it_CH
+│   │       │       ├── it_IT
+│   │       │       ├── it_IT@euro
+│   │       │       ├── iu_CA
+│   │       │       ├── ja_JP
+│   │       │       ├── ka_GE
+│   │       │       ├── kab_DZ
+│   │       │       ├── kk_KZ
+│   │       │       ├── kl_GL
+│   │       │       ├── km_KH
+│   │       │       ├── kn_IN
+│   │       │       ├── ko_KR
+│   │       │       ├── kok_IN
+│   │       │       ├── ks_IN
+│   │       │       ├── ks_IN@devanagari
+│   │       │       ├── ku_TR
+│   │       │       ├── kw_GB
+│   │       │       ├── ky_KG
+│   │       │       ├── lb_LU
+│   │       │       ├── lg_UG
+│   │       │       ├── li_BE
+│   │       │       ├── li_NL
+│   │       │       ├── lij_IT
+│   │       │       ├── ln_CD
+│   │       │       ├── lo_LA
+│   │       │       ├── lt_LT
+│   │       │       ├── lv_LV
+│   │       │       ├── lzh_TW
+│   │       │       ├── mag_IN
+│   │       │       ├── mai_IN
+│   │       │       ├── mai_NP
+│   │       │       ├── mfe_MU
+│   │       │       ├── mg_MG
+│   │       │       ├── mhr_RU
+│   │       │       ├── mi_NZ
+│   │       │       ├── miq_NI
+│   │       │       ├── mjw_IN
+│   │       │       ├── mk_MK
+│   │       │       ├── ml_IN
+│   │       │       ├── mn_MN
+│   │       │       ├── mni_IN
+│   │       │       ├── mnw_MM
+│   │       │       ├── mr_IN
+│   │       │       ├── ms_MY
+│   │       │       ├── mt_MT
+│   │       │       ├── my_MM
+│   │       │       ├── nan_TW
+│   │       │       ├── nan_TW@latin
+│   │       │       ├── nb_NO
+│   │       │       ├── nds_DE
+│   │       │       ├── nds_NL
+│   │       │       ├── ne_NP
+│   │       │       ├── nhn_MX
+│   │       │       ├── niu_NU
+│   │       │       ├── niu_NZ
+│   │       │       ├── nl_AW
+│   │       │       ├── nl_BE
+│   │       │       ├── nl_BE@euro
+│   │       │       ├── nl_NL
+│   │       │       ├── nl_NL@euro
+│   │       │       ├── nn_NO
+│   │       │       ├── nr_ZA
+│   │       │       ├── nso_ZA
+│   │       │       ├── oc_FR
+│   │       │       ├── om_ET
+│   │       │       ├── om_KE
+│   │       │       ├── or_IN
+│   │       │       ├── os_RU
+│   │       │       ├── pa_IN
+│   │       │       ├── pa_PK
+│   │       │       ├── pap_AW
+│   │       │       ├── pap_CW
+│   │       │       ├── pl_PL
+│   │       │       ├── ps_AF
+│   │       │       ├── pt_BR
+│   │       │       ├── pt_PT
+│   │       │       ├── pt_PT@euro
+│   │       │       ├── quz_PE
+│   │       │       ├── raj_IN
+│   │       │       ├── rif_MA
+│   │       │       ├── ro_RO
+│   │       │       ├── ru_RU
+│   │       │       ├── ru_UA
+│   │       │       ├── rw_RW
+│   │       │       ├── sa_IN
+│   │       │       ├── sah_RU
+│   │       │       ├── sat_IN
+│   │       │       ├── sc_IT
+│   │       │       ├── sd_IN
+│   │       │       ├── sd_IN@devanagari
+│   │       │       ├── se_NO
+│   │       │       ├── sgs_LT
+│   │       │       ├── shn_MM
+│   │       │       ├── shs_CA
+│   │       │       ├── si_LK
+│   │       │       ├── sid_ET
+│   │       │       ├── sk_SK
+│   │       │       ├── sl_SI
+│   │       │       ├── sm_WS
+│   │       │       ├── so_DJ
+│   │       │       ├── so_ET
+│   │       │       ├── so_KE
+│   │       │       ├── so_SO
+│   │       │       ├── sq_AL
+│   │       │       ├── sq_MK
+│   │       │       ├── sr_ME
+│   │       │       ├── sr_RS
+│   │       │       ├── sr_RS@latin
+│   │       │       ├── ss_ZA
+│   │       │       ├── st_ZA
+│   │       │       ├── sv_FI
+│   │       │       ├── sv_FI@euro
+│   │       │       ├── sv_SE
+│   │       │       ├── sw_KE
+│   │       │       ├── sw_TZ
+│   │       │       ├── syr
+│   │       │       ├── szl_PL
+│   │       │       ├── ta_IN
+│   │       │       ├── ta_LK
+│   │       │       ├── tcy_IN
+│   │       │       ├── te_IN
+│   │       │       ├── tg_TJ
+│   │       │       ├── th_TH
+│   │       │       ├── the_NP
+│   │       │       ├── ti_ER
+│   │       │       ├── ti_ET
+│   │       │       ├── tig_ER
+│   │       │       ├── tk_TM
+│   │       │       ├── tl_PH
+│   │       │       ├── tn_ZA
+│   │       │       ├── to_TO
+│   │       │       ├── tpi_PG
+│   │       │       ├── tr_CY
+│   │       │       ├── tr_TR
+│   │       │       ├── translit_circle
+│   │       │       ├── translit_cjk_compat
+│   │       │       ├── translit_cjk_variants
+│   │       │       ├── translit_combining
+│   │       │       ├── translit_compat
+│   │       │       ├── translit_font
+│   │       │       ├── translit_fraction
+│   │       │       ├── translit_hangul
+│   │       │       ├── translit_narrow
+│   │       │       ├── translit_neutral
+│   │       │       ├── translit_small
+│   │       │       ├── translit_wide
+│   │       │       ├── ts_ZA
+│   │       │       ├── tt_RU
+│   │       │       ├── tt_RU@iqtelif
+│   │       │       ├── ug_CN
+│   │       │       ├── uk_UA
+│   │       │       ├── unm_US
+│   │       │       ├── ur_IN
+│   │       │       ├── ur_PK
+│   │       │       ├── uz_UZ
+│   │       │       ├── uz_UZ@cyrillic
+│   │       │       ├── ve_ZA
+│   │       │       ├── vi_VN
+│   │       │       ├── wa_BE
+│   │       │       ├── wa_BE@euro
+│   │       │       ├── wae_CH
+│   │       │       ├── wal_ET
+│   │       │       ├── wo_SN
+│   │       │       ├── xh_ZA
+│   │       │       ├── yi_US
+│   │       │       ├── yo_NG
+│   │       │       ├── yue_HK
+│   │       │       ├── yuw_PG
+│   │       │       ├── zh_CN
+│   │       │       ├── zh_HK
+│   │       │       ├── zh_SG
+│   │       │       ├── zh_TW
+│   │       │       └── zu_ZA
+│   │       └── locale
+│   │           ├── be
+│   │           │   └── LC_MESSAGES
+│   │           ├── bg
+│   │           │   └── LC_MESSAGES
+│   │           ├── ca
+│   │           │   └── LC_MESSAGES
+│   │           ├── cs
+│   │           │   └── LC_MESSAGES
+│   │           ├── da
+│   │           │   └── LC_MESSAGES
+│   │           ├── de
+│   │           │   └── LC_MESSAGES
+│   │           ├── el
+│   │           │   └── LC_MESSAGES
+│   │           ├── en_GB
+│   │           │   └── LC_MESSAGES
+│   │           ├── eo
+│   │           │   └── LC_MESSAGES
+│   │           ├── es
+│   │           │   └── LC_MESSAGES
+│   │           ├── fi
+│   │           │   └── LC_MESSAGES
+│   │           ├── fr
+│   │           │   └── LC_MESSAGES
+│   │           ├── gl
+│   │           │   └── LC_MESSAGES
+│   │           ├── hr
+│   │           │   └── LC_MESSAGES
+│   │           ├── hu
+│   │           │   └── LC_MESSAGES
+│   │           ├── ia
+│   │           │   └── LC_MESSAGES
+│   │           ├── id
+│   │           │   └── LC_MESSAGES
+│   │           ├── it
+│   │           │   └── LC_MESSAGES
+│   │           ├── ja
+│   │           │   └── LC_MESSAGES
+│   │           ├── ka
+│   │           │   └── LC_MESSAGES
+│   │           ├── ko
+│   │           │   └── LC_MESSAGES
+│   │           ├── locale.alias
+│   │           ├── lt
+│   │           │   └── LC_MESSAGES
+│   │           ├── nb
+│   │           │   └── LC_MESSAGES
+│   │           ├── nl
+│   │           │   └── LC_MESSAGES
+│   │           ├── pl
+│   │           │   └── LC_MESSAGES
+│   │           ├── pt
+│   │           │   └── LC_MESSAGES
+│   │           ├── pt_BR
+│   │           │   └── LC_MESSAGES
+│   │           ├── ro
+│   │           │   └── LC_MESSAGES
+│   │           ├── ru
+│   │           │   └── LC_MESSAGES
+│   │           ├── rw
+│   │           │   └── LC_MESSAGES
+│   │           ├── sk
+│   │           │   └── LC_MESSAGES
+│   │           ├── sl
+│   │           │   └── LC_MESSAGES
+│   │           ├── sr
+│   │           │   └── LC_MESSAGES
+│   │           ├── sv
+│   │           │   └── LC_MESSAGES
+│   │           ├── tr
+│   │           │   └── LC_MESSAGES
+│   │           ├── uk
+│   │           │   └── LC_MESSAGES
+│   │           ├── vi
+│   │           │   └── LC_MESSAGES
+│   │           ├── zh_CN
+│   │           │   └── LC_MESSAGES
+│   │           └── zh_TW
+│   │               └── LC_MESSAGES
+│   ├── 2c7mmv7ygmna4qmx6z16d75zzd4rrbv1-aws-c-auth-0.7.10
+│   │   ├── include
+│   │   │   └── aws
+│   │   │       └── auth
+│   │   │           ├── auth.h
+│   │   │           ├── aws_imds_client.h
+│   │   │           ├── credentials.h
+│   │   │           ├── exports.h
+│   │   │           ├── signable.h
+│   │   │           ├── signing.h
+│   │   │           ├── signing_config.h
+│   │   │           └── signing_result.h
+│   │   ├── lib
+│   │   │   ├── aws-c-auth
+│   │   │   │   └── cmake
+│   │   │   │       ├── aws-c-auth-config.cmake
+│   │   │   │       └── shared
+│   │   │   │           ├── aws-c-auth-targets-release.cmake
+│   │   │   │           └── aws-c-auth-targets.cmake
+│   │   │   ├── libaws-c-auth.so -> libaws-c-auth.so.1.0.0
+│   │   │   └── libaws-c-auth.so.1.0.0
+│   │   └── nix-support
+│   │       └── propagated-build-inputs
+│   ├── 3sxwxqzkkrgpgaibkm27ggb9kjbzdy31-xgcc-13.2.0-libgcc
+│   │   └── lib
+│   │       ├── libgcc_s.so
+│   │       └── libgcc_s.so.1
+│   ├── 4gcgr5bgj8gwxpflajjj9qxchswgassl-nix-2.21.0
+│   │   ├── bin
+│   │   │   ├── nix
+│   │   │   ├── nix-build -> nix
+│   │   │   ├── nix-channel -> nix
+│   │   │   ├── nix-collect-garbage -> nix
+│   │   │   ├── nix-copy-closure -> nix
+│   │   │   ├── nix-daemon -> nix
+│   │   │   ├── nix-env -> nix
+│   │   │   ├── nix-hash -> nix
+│   │   │   ├── nix-instantiate -> nix
+│   │   │   ├── nix-prefetch-url -> nix
+│   │   │   ├── nix-shell -> nix
+│   │   │   └── nix-store -> nix
+│   │   ├── etc
+│   │   │   ├── init
+│   │   │   │   └── nix-daemon.conf
+│   │   │   └── profile.d
+│   │   │       ├── nix-daemon.fish
+│   │   │       ├── nix-daemon.sh
+│   │   │       ├── nix.fish
+│   │   │       └── nix.sh
+│   │   ├── lib
+│   │   │   ├── libboost_context.so -> libboost_context.so.1.81.0
+│   │   │   ├── libboost_context.so.1.81.0
+│   │   │   ├── libboost_system.so -> libboost_system.so.1.81.0
+│   │   │   ├── libboost_system.so.1.81.0
+│   │   │   ├── libboost_thread.so -> libboost_thread.so.1.81.0
+│   │   │   ├── libboost_thread.so.1.81.0
+│   │   │   ├── libnixcmd.so
+│   │   │   ├── libnixexpr.so
+│   │   │   ├── libnixfetchers.so
+│   │   │   ├── libnixmain.so
+│   │   │   ├── libnixstore.so
+│   │   │   ├── libnixutil.so
+│   │   │   ├── systemd
+│   │   │   │   └── system
+│   │   │   │       ├── nix-daemon.service
+│   │   │   │       └── nix-daemon.socket
+│   │   │   └── tmpfiles.d
+│   │   │       └── nix-daemon.conf
+│   │   ├── libexec
+│   │   │   └── nix
+│   │   │       └── build-remote -> ../../bin/nix
+│   │   └── share
+│   │       ├── bash-completion
+│   │       │   └── completions
+│   │       │       └── nix
+│   │       ├── fish
+│   │       │   └── vendor_completions.d
+│   │       │       └── nix.fish
+│   │       └── zsh
+│   │           └── site-functions
+│   │               ├── _nix
+│   │               └── run-help-nix
+│   ├── 5lr5n3qa4day8l1ivbwlcby2nknczqkq-bash-5.2p26
+│   │   ├── bin
+│   │   │   ├── bash
+│   │   │   └── sh -> bash
+│   │   └── lib
+│   │       └── bash
+│   │           ├── Makefile.sample
+│   │           ├── accept
+│   │           ├── basename
+│   │           ├── csv
+│   │           ├── cut
+│   │           ├── dirname
+│   │           ├── dsv
+│   │           ├── fdflags
+│   │           ├── finfo
+│   │           ├── getconf
+│   │           ├── head
+│   │           ├── id
+│   │           ├── ln
+│   │           ├── loadables.h
+│   │           ├── logname
+│   │           ├── mkdir
+│   │           ├── mkfifo
+│   │           ├── mktemp
+│   │           ├── mypid
+│   │           ├── pathchk
+│   │           ├── print
+│   │           ├── printenv
+│   │           ├── push
+│   │           ├── realpath
+│   │           ├── rm
+│   │           ├── rmdir
+│   │           ├── seq
+│   │           ├── setpgid
+│   │           ├── sleep
+│   │           ├── stat
+│   │           ├── strftime
+│   │           ├── sync
+│   │           ├── tee
+│   │           ├── truefalse
+│   │           ├── tty
+│   │           ├── uname
+│   │           ├── unlink
+│   │           └── whoami
+│   ├── 5mm269blx1zrsjz2smhw037c22lgvwbm-lowdown-1.1.0-lib
+│   │   └── lib
+│   │       ├── liblowdown.so -> liblowdown.so.1
+│   │       └── liblowdown.so.1
+│   ├── 65h1sjgjajn326djk4y6n2vidh20d8zh-keyutils-1.6.3-lib
+│   │   └── lib
+│   │       ├── libkeyutils.a
+│   │       ├── libkeyutils.so -> libkeyutils.so.1.10
+│   │       ├── libkeyutils.so.1 -> libkeyutils.so.1.10
+│   │       └── libkeyutils.so.1.10
+│   ├── 6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc
+│   │   └── lib
+│   │       ├── libgcc_s.so
+│   │       └── libgcc_s.so.1
+│   ├── 6wfv81r4danww91b2p3i7i46l7n1lcs1-libxml2-2.12.5
+│   │   └── lib
+│   │       ├── libxml2.la
+│   │       ├── libxml2.so -> libxml2.so.2.12.5
+│   │       ├── libxml2.so.2 -> libxml2.so.2.12.5
+│   │       └── libxml2.so.2.12.5
+│   ├── 77yhmwrwism02371kzyda4d127kdwdnf-libunistring-1.1
+│   │   └── lib
+│   │       ├── libunistring.la
+│   │       ├── libunistring.so -> libunistring.so.5.0.0
+│   │       ├── libunistring.so.5 -> libunistring.so.5.0.0
+│   │       └── libunistring.so.5.0.0
+│   ├── 7nmrrad8skxr47f9hfl3xc0pfqmwq51b-openssl-3.0.13
+│   │   ├── etc
+│   │   │   └── ssl
+│   │   │       ├── ct_log_list.cnf
+│   │   │       ├── ct_log_list.cnf.dist
+│   │   │       ├── openssl.cnf
+│   │   │       └── openssl.cnf.dist
+│   │   └── lib
+│   │       ├── engines-3
+│   │       │   ├── afalg.so
+│   │       │   ├── capi.so
+│   │       │   ├── loader_attic.so
+│   │       │   └── padlock.so
+│   │       ├── libcrypto.so -> libcrypto.so.3
+│   │       ├── libcrypto.so.3
+│   │       ├── libssl.so -> libssl.so.3
+│   │       ├── libssl.so.3
+│   │       └── ossl-modules
+│   │           └── legacy.so
+│   ├── 7w57k6i6h2166ggppih6jnkp6abnyn3b-aws-c-http-0.7.14
+│   │   ├── include
+│   │   │   └── aws
+│   │   │       └── http
+│   │   │           ├── connection.h
+│   │   │           ├── connection_manager.h
+│   │   │           ├── exports.h
+│   │   │           ├── http.h
+│   │   │           ├── http2_stream_manager.h
+│   │   │           ├── proxy.h
+│   │   │           ├── request_response.h
+│   │   │           ├── server.h
+│   │   │           ├── statistics.h
+│   │   │           ├── status_code.h
+│   │   │           └── websocket.h
+│   │   └── lib
+│   │       ├── aws-c-http
+│   │       │   └── cmake
+│   │       │       ├── aws-c-http-config.cmake
+│   │       │       └── shared
+│   │       │           ├── aws-c-http-targets-release.cmake
+│   │       │           └── aws-c-http-targets.cmake
+│   │       ├── libaws-c-http.so -> libaws-c-http.so.1.0.0
+│   │       └── libaws-c-http.so.1.0.0
+│   ├── 81xljxjav3gc2ypdcsapwm3qckhk2c55-env-manifest.nix
+│   ├── 8z7xdywm2bryk2hq9iwdzbywlar9kq53-libseccomp-2.5.5-lib
+│   │   └── lib
+│   │       ├── libseccomp.la
+│   │       ├── libseccomp.so -> libseccomp.so.2.5.5
+│   │       ├── libseccomp.so.2 -> libseccomp.so.2.5.5
+│   │       └── libseccomp.so.2.5.5
+│   ├── 9q68k1q0baqph134mi2c3mag5v6fa98j-aws-c-cal-0.6.10
+│   │   ├── include
+│   │   │   └── aws
+│   │   │       └── cal
+│   │   │           ├── cal.h
+│   │   │           ├── ecc.h
+│   │   │           ├── exports.h
+│   │   │           ├── hash.h
+│   │   │           ├── hmac.h
+│   │   │           ├── rsa.h
+│   │   │           └── symmetric_cipher.h
+│   │   └── lib
+│   │       ├── aws-c-cal
+│   │       │   └── cmake
+│   │       │       ├── aws-c-cal-config.cmake
+│   │       │       ├── modules
+│   │       │       │   └── Findcrypto.cmake
+│   │       │       └── shared
+│   │       │           ├── aws-c-cal-targets-release.cmake
+│   │       │           └── aws-c-cal-targets.cmake
+│   │       ├── libaws-c-cal.so -> libaws-c-cal.so.1.0.0
+│   │       └── libaws-c-cal.so.1.0.0
+│   ├── 9v67dgmg1r9sb92h4c0drh35j2z5cnv4-attr-2.5.2
+│   │   ├── etc
+│   │   │   └── xattr.conf
+│   │   ├── lib
+│   │   │   ├── libattr.la
+│   │   │   ├── libattr.so -> libattr.so.1.1.2502
+│   │   │   ├── libattr.so.1 -> libattr.so.1.1.2502
+│   │   │   └── libattr.so.1.1.2502
+│   │   └── share
+│   │       └── locale
+│   │           ├── cs
+│   │           │   └── LC_MESSAGES
+│   │           │       └── attr.mo
+│   │           ├── de
+│   │           │   └── LC_MESSAGES
+│   │           │       └── attr.mo
+│   │           ├── en@boldquot
+│   │           │   └── LC_MESSAGES
+│   │           │       └── attr.mo
+│   │           ├── en@quot
+│   │           │   └── LC_MESSAGES
+│   │           │       └── attr.mo
+│   │           ├── es
+│   │           │   └── LC_MESSAGES
+│   │           │       └── attr.mo
+│   │           ├── fr
+│   │           │   └── LC_MESSAGES
+│   │           │       └── attr.mo
+│   │           ├── gl
+│   │           │   └── LC_MESSAGES
+│   │           │       └── attr.mo
+│   │           ├── ka
+│   │           │   └── LC_MESSAGES
+│   │           │       └── attr.mo
+│   │           ├── nl
+│   │           │   └── LC_MESSAGES
+│   │           │       └── attr.mo
+│   │           ├── pl
+│   │           │   └── LC_MESSAGES
+│   │           │       └── attr.mo
+│   │           └── sv
+│   │               └── LC_MESSAGES
+│   │                   └── attr.mo
+│   ├── 9x51r0c2ramc6p9rrcqgl35rqhfvcb64-libkrb5-1.21.2
+│   │   ├── bin
+│   │   │   ├── compile_et
+│   │   │   └── krb5-send-pr
+│   │   ├── lib
+│   │   │   ├── libcom_err.so -> libcom_err.so.3.0
+│   │   │   ├── libcom_err.so.3 -> libcom_err.so.3.0
+│   │   │   ├── libcom_err.so.3.0
+│   │   │   ├── libgssapi_krb5.so -> libgssapi_krb5.so.2.2
+│   │   │   ├── libgssapi_krb5.so.2 -> libgssapi_krb5.so.2.2
+│   │   │   ├── libgssapi_krb5.so.2.2
+│   │   │   ├── libgssrpc.so -> libgssrpc.so.4.2
+│   │   │   ├── libgssrpc.so.4 -> libgssrpc.so.4.2
+│   │   │   ├── libgssrpc.so.4.2
+│   │   │   ├── libk5crypto.so -> libk5crypto.so.3.1
+│   │   │   ├── libk5crypto.so.3 -> libk5crypto.so.3.1
+│   │   │   ├── libk5crypto.so.3.1
+│   │   │   ├── libkadm5clnt.so -> libkadm5clnt_mit.so
+│   │   │   ├── libkadm5clnt_mit.so -> libkadm5clnt_mit.so.12.0
+│   │   │   ├── libkadm5clnt_mit.so.12 -> libkadm5clnt_mit.so.12.0
+│   │   │   ├── libkadm5clnt_mit.so.12.0
+│   │   │   ├── libkadm5srv.so -> libkadm5srv_mit.so
+│   │   │   ├── libkadm5srv_mit.so -> libkadm5srv_mit.so.12.0
+│   │   │   ├── libkadm5srv_mit.so.12 -> libkadm5srv_mit.so.12.0
+│   │   │   ├── libkadm5srv_mit.so.12.0
+│   │   │   ├── libkdb5.so -> libkdb5.so.10.0
+│   │   │   ├── libkdb5.so.10 -> libkdb5.so.10.0
+│   │   │   ├── libkdb5.so.10.0
+│   │   │   ├── libkrad.so -> libkrad.so.0.0
+│   │   │   ├── libkrad.so.0 -> libkrad.so.0.0
+│   │   │   ├── libkrad.so.0.0
+│   │   │   ├── libkrb5.so -> libkrb5.so.3.3
+│   │   │   ├── libkrb5.so.3 -> libkrb5.so.3.3
+│   │   │   ├── libkrb5.so.3.3
+│   │   │   ├── libkrb5support.so -> libkrb5support.so.0.1
+│   │   │   ├── libkrb5support.so.0 -> libkrb5support.so.0.1
+│   │   │   ├── libkrb5support.so.0.1
+│   │   │   ├── libverto.so -> libverto.so.0.0
+│   │   │   ├── libverto.so.0 -> libverto.so.0.0
+│   │   │   └── libverto.so.0.0
+│   │   ├── sbin -> bin
+│   │   └── share
+│   │       ├── et
+│   │       │   ├── et_c.awk
+│   │       │   └── et_h.awk
+│   │       └── man
+│   │           └── man1
+│   │               └── compile_et.1.gz
+│   ├── agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib
+│   │   ├── lib
+│   │   │   ├── libasan.la
+│   │   │   ├── libasan.so -> libasan.so.8.0.0
+│   │   │   ├── libasan.so.8 -> libasan.so.8.0.0
+│   │   │   ├── libasan.so.8.0.0
+│   │   │   ├── libatomic.la
+│   │   │   ├── libatomic.so -> libatomic.so.1.2.0
+│   │   │   ├── libatomic.so.1 -> libatomic.so.1.2.0
+│   │   │   ├── libatomic.so.1.2.0
+│   │   │   ├── libgcc_s.so -> /nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib/libgcc_s.so
+│   │   │   ├── libgcc_s.so.1 -> /nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib/libgcc_s.so.1
+│   │   │   ├── libgomp.la
+│   │   │   ├── libgomp.so -> libgomp.so.1.0.0
+│   │   │   ├── libgomp.so.1 -> libgomp.so.1.0.0
+│   │   │   ├── libgomp.so.1.0.0
+│   │   │   ├── libhwasan.la
+│   │   │   ├── libhwasan.so -> libhwasan.so.0.0.0
+│   │   │   ├── libhwasan.so.0 -> libhwasan.so.0.0.0
+│   │   │   ├── libhwasan.so.0.0.0
+│   │   │   ├── libitm.la
+│   │   │   ├── libitm.so -> libitm.so.1.0.0
+│   │   │   ├── libitm.so.1 -> libitm.so.1.0.0
+│   │   │   ├── libitm.so.1.0.0
+│   │   │   ├── liblsan.la
+│   │   │   ├── liblsan.so -> liblsan.so.0.0.0
+│   │   │   ├── liblsan.so.0 -> liblsan.so.0.0.0
+│   │   │   ├── liblsan.so.0.0.0
+│   │   │   ├── libquadmath.la
+│   │   │   ├── libquadmath.so -> libquadmath.so.0.0.0
+│   │   │   ├── libquadmath.so.0 -> libquadmath.so.0.0.0
+│   │   │   ├── libquadmath.so.0.0.0
+│   │   │   ├── libssp.la
+│   │   │   ├── libssp.so -> libssp.so.0.0.0
+│   │   │   ├── libssp.so.0 -> libssp.so.0.0.0
+│   │   │   ├── libssp.so.0.0.0
+│   │   │   ├── libssp_nonshared.la
+│   │   │   ├── libstdc++.la
+│   │   │   ├── libstdc++.so -> libstdc++.so.6.0.32
+│   │   │   ├── libstdc++.so.6 -> libstdc++.so.6.0.32
+│   │   │   ├── libstdc++.so.6.0.32
+│   │   │   ├── libstdc++.so.6.0.32-gdb.py
+│   │   │   ├── libstdc++exp.la
+│   │   │   ├── libstdc++fs.la
+│   │   │   ├── libsupc++.la
+│   │   │   ├── libtsan.la
+│   │   │   ├── libtsan.so -> libtsan.so.2.0.0
+│   │   │   ├── libtsan.so.2 -> libtsan.so.2.0.0
+│   │   │   ├── libtsan.so.2.0.0
+│   │   │   ├── libubsan.la
+│   │   │   ├── libubsan.so -> libubsan.so.1.0.0
+│   │   │   ├── libubsan.so.1 -> libubsan.so.1.0.0
+│   │   │   └── libubsan.so.1.0.0
+│   │   ├── lib64 -> lib
+│   │   └── share
+│   │       └── gcc-13.2.0
+│   │           └── python
+│   │               └── libstdcxx
+│   │                   ├── __init__.py
+│   │                   └── v6
+│   │                       ├── __init__.py
+│   │                       ├── printers.py
+│   │                       └── xmethods.py
+│   ├── c6l9badak7sp1sl2vhny57hfnfv07in2-aws-c-common-0.9.10
+│   │   ├── include
+│   │   │   └── aws
+│   │   │       ├── common
+│   │   │       │   ├── allocator.h
+│   │   │       │   ├── array_list.h
+│   │   │       │   ├── array_list.inl
+│   │   │       │   ├── assert.h
+│   │   │       │   ├── atomics.h
+│   │   │       │   ├── atomics.inl
+│   │   │       │   ├── atomics_fallback.inl
+│   │   │       │   ├── atomics_gnu.inl
+│   │   │       │   ├── atomics_gnu_old.inl
+│   │   │       │   ├── atomics_msvc.inl
+│   │   │       │   ├── byte_buf.h
+│   │   │       │   ├── byte_order.h
+│   │   │       │   ├── byte_order.inl
+│   │   │       │   ├── cache.h
+│   │   │       │   ├── clock.h
+│   │   │       │   ├── clock.inl
+│   │   │       │   ├── command_line_parser.h
+│   │   │       │   ├── common.h
+│   │   │       │   ├── condition_variable.h
+│   │   │       │   ├── config.h
+│   │   │       │   ├── cpuid.h
+│   │   │       │   ├── cross_process_lock.h
+│   │   │       │   ├── date_time.h
+│   │   │       │   ├── device_random.h
+│   │   │       │   ├── encoding.h
+│   │   │       │   ├── encoding.inl
+│   │   │       │   ├── environment.h
+│   │   │       │   ├── error.h
+│   │   │       │   ├── error.inl
+│   │   │       │   ├── exports.h
+│   │   │       │   ├── external
+│   │   │       │   │   └── ittnotify.h
+│   │   │       │   ├── fifo_cache.h
+│   │   │       │   ├── file.h
+│   │   │       │   ├── hash_table.h
+│   │   │       │   ├── json.h
+│   │   │       │   ├── lifo_cache.h
+│   │   │       │   ├── linked_hash_table.h
+│   │   │       │   ├── linked_list.h
+│   │   │       │   ├── linked_list.inl
+│   │   │       │   ├── log_channel.h
+│   │   │       │   ├── log_formatter.h
+│   │   │       │   ├── log_writer.h
+│   │   │       │   ├── logging.h
+│   │   │       │   ├── lru_cache.h
+│   │   │       │   ├── macros.h
+│   │   │       │   ├── math.cbmc.inl
+│   │   │       │   ├── math.fallback.inl
+│   │   │       │   ├── math.gcc_arm64_asm.inl
+│   │   │       │   ├── math.gcc_builtin.inl
+│   │   │       │   ├── math.gcc_overflow.inl
+│   │   │       │   ├── math.gcc_x64_asm.inl
+│   │   │       │   ├── math.h
+│   │   │       │   ├── math.inl
+│   │   │       │   ├── math.msvc.inl
+│   │   │       │   ├── mutex.h
+│   │   │       │   ├── package.h
+│   │   │       │   ├── platform.h
+│   │   │       │   ├── posix
+│   │   │       │   │   └── common.inl
+│   │   │       │   ├── predicates.h
+│   │   │       │   ├── priority_queue.h
+│   │   │       │   ├── process.h
+│   │   │       │   ├── promise.h
+│   │   │       │   ├── ref_count.h
+│   │   │       │   ├── ring_buffer.h
+│   │   │       │   ├── ring_buffer.inl
+│   │   │       │   ├── rw_lock.h
+│   │   │       │   ├── statistics.h
+│   │   │       │   ├── stdbool.h
+│   │   │       │   ├── stdint.h
+│   │   │       │   ├── string.h
+│   │   │       │   ├── string.inl
+│   │   │       │   ├── system_info.h
+│   │   │       │   ├── system_resource_util.h
+│   │   │       │   ├── task_scheduler.h
+│   │   │       │   ├── thread.h
+│   │   │       │   ├── thread_scheduler.h
+│   │   │       │   ├── time.h
+│   │   │       │   ├── uri.h
+│   │   │       │   ├── uuid.h
+│   │   │       │   ├── xml_parser.h
+│   │   │       │   ├── zero.h
+│   │   │       │   └── zero.inl
+│   │   │       └── testing
+│   │   │           └── aws_test_harness.h
+│   │   ├── lib
+│   │   │   ├── aws-c-common
+│   │   │   │   └── cmake
+│   │   │   │       ├── aws-c-common-config.cmake
+│   │   │   │       └── shared
+│   │   │   │           ├── aws-c-common-targets-release.cmake
+│   │   │   │           └── aws-c-common-targets.cmake
+│   │   │   ├── cmake
+│   │   │   │   ├── AwsCFlags.cmake
+│   │   │   │   ├── AwsCRuntime.cmake
+│   │   │   │   ├── AwsCheckHeaders.cmake
+│   │   │   │   ├── AwsFeatureTests.cmake
+│   │   │   │   ├── AwsFindPackage.cmake
+│   │   │   │   ├── AwsLibFuzzer.cmake
+│   │   │   │   ├── AwsSIMD.cmake
+│   │   │   │   ├── AwsSanitizers.cmake
+│   │   │   │   ├── AwsSharedLibSetup.cmake
+│   │   │   │   └── AwsTestHarness.cmake
+│   │   │   ├── libaws-c-common.so -> libaws-c-common.so.1
+│   │   │   ├── libaws-c-common.so.1 -> libaws-c-common.so.1.0.0
+│   │   │   └── libaws-c-common.so.1.0.0
+│   │   └── nix-support
+│   │       └── setup-hook
+│   ├── caqi6ddn448cc611ws6zz3gv2yhdnpwp-libcpuid-0.6.4
+│   │   ├── bin
+│   │   │   └── cpuid_tool
+│   │   ├── include
+│   │   │   └── libcpuid
+│   │   │       ├── libcpuid.h
+│   │   │       ├── libcpuid_constants.h
+│   │   │       └── libcpuid_types.h
+│   │   └── lib
+│   │       ├── libcpuid.la
+│   │       ├── libcpuid.so -> libcpuid.so.16.0.4
+│   │       ├── libcpuid.so.16 -> libcpuid.so.16.0.4
+│   │       ├── libcpuid.so.16.0.4
+│   │       └── pkgconfig
+│   │           └── libcpuid.pc
+│   ├── cbg7fz3cd0jbh79fpi72h0zwvvqgjzpd-zstd-1.5.5
+│   │   ├── bin
+│   │   │   └── pzstd
+│   │   ├── lib
+│   │   │   ├── libzstd.so -> libzstd.so.1
+│   │   │   ├── libzstd.so.1 -> libzstd.so.1.5.5
+│   │   │   └── libzstd.so.1.5.5
+│   │   └── share
+│   │       └── doc
+│   │           └── zstd
+│   │               └── zstd_manual.html
+│   ├── d28086h303yxmanj11i2myfmbw0pmfrp-editline-1.17.1
+│   │   └── lib
+│   │       ├── libeditline.la
+│   │       ├── libeditline.so -> libeditline.so.1.0.2
+│   │       ├── libeditline.so.1 -> libeditline.so.1.0.2
+│   │       └── libeditline.so.1.0.2
+│   ├── fahykydvq1dfxdkr30vhydz4kd4xc4d7-aws-sdk-cpp-1.11.207
+│   │   ├── include
+│   │   └── lib
+│   │       ├── libaws-cpp-sdk-core.so
+│   │       ├── libaws-cpp-sdk-s3.so
+│   │       ├── libaws-cpp-sdk-transfer.so
+│   │       └── libtesting-resources.so
+│   ├── fi63jgmvn2wv35iyqhkz0x7q4n583d5k-aws-c-sdkutils-0.1.12
+│   │   ├── include
+│   │   │   └── aws
+│   │   │       └── sdkutils
+│   │   │           ├── aws_profile.h
+│   │   │           ├── endpoints_rule_engine.h
+│   │   │           ├── exports.h
+│   │   │           ├── partitions.h
+│   │   │           ├── resource_name.h
+│   │   │           └── sdkutils.h
+│   │   └── lib
+│   │       ├── aws-c-sdkutils
+│   │       │   └── cmake
+│   │       │       ├── aws-c-sdkutils-config.cmake
+│   │       │       └── shared
+│   │       │           ├── aws-c-sdkutils-targets-release.cmake
+│   │       │           └── aws-c-sdkutils-targets.cmake
+│   │       ├── libaws-c-sdkutils.so -> libaws-c-sdkutils.so.1.0.0
+│   │       └── libaws-c-sdkutils.so.1.0.0
+│   ├── hxva0j3n9iipjwi12h5hrb4adpz8za92-user-environment
+│   │   ├── bin -> /nix/store/4gcgr5bgj8gwxpflajjj9qxchswgassl-nix-2.21.0/bin
+│   │   ├── etc -> /nix/store/4gcgr5bgj8gwxpflajjj9qxchswgassl-nix-2.21.0/etc
+│   │   ├── lib -> /nix/store/4gcgr5bgj8gwxpflajjj9qxchswgassl-nix-2.21.0/lib
+│   │   ├── libexec -> /nix/store/4gcgr5bgj8gwxpflajjj9qxchswgassl-nix-2.21.0/libexec
+│   │   ├── manifest.nix -> /nix/store/81xljxjav3gc2ypdcsapwm3qckhk2c55-env-manifest.nix
+│   │   └── share -> /nix/store/4gcgr5bgj8gwxpflajjj9qxchswgassl-nix-2.21.0/share
+│   ├── iz251c49qmnm0fjnxaxrrq7lxqy8aaiy-aws-c-compression-0.2.18
+│   │   ├── include
+│   │   │   └── aws
+│   │   │       └── compression
+│   │   │           ├── compression.h
+│   │   │           ├── exports.h
+│   │   │           └── huffman.h
+│   │   └── lib
+│   │       ├── aws-c-compression
+│   │       │   └── cmake
+│   │       │       ├── aws-c-compression-config.cmake
+│   │       │       └── shared
+│   │       │           ├── aws-c-compression-targets-release.cmake
+│   │       │           └── aws-c-compression-targets.cmake
+│   │       ├── libaws-c-compression.so -> libaws-c-compression.so.1.0.0
+│   │       └── libaws-c-compression.so.1.0.0
+│   ├── j25lj0982bvbgw1c6ghnjz1gi4fxhlzb-aws-c-s3-0.4.0
+│   │   ├── include
+│   │   │   └── aws
+│   │   │       └── s3
+│   │   │           ├── exports.h
+│   │   │           ├── s3.h
+│   │   │           ├── s3_client.h
+│   │   │           └── s3_endpoint_resolver.h
+│   │   └── lib
+│   │       ├── aws-c-s3
+│   │       │   └── cmake
+│   │       │       ├── aws-c-s3-config.cmake
+│   │       │       └── shared
+│   │       │           ├── aws-c-s3-targets-release.cmake
+│   │       │           └── aws-c-s3-targets.cmake
+│   │       ├── libaws-c-s3.so -> libaws-c-s3.so.0unstable
+│   │       ├── libaws-c-s3.so.0unstable -> libaws-c-s3.so.1.0.0
+│   │       └── libaws-c-s3.so.1.0.0
+│   ├── j7d9731ymq5p64srjc4668s5rr07k5gb-busybox-static-x86_64-unknown-linux-musl-1.36.1
+│   │   ├── bin
+│   │   │   ├── ash -> busybox
+│   │   │   ├── busybox
+│   │   │   └── sh -> busybox
+│   │   └── default.script
+│   ├── j7wbld5zvy0q8xs3426621a0a67w2vqd-boehm-gc-8.2.4
+│   │   ├── lib
+│   │   │   ├── libcord.la
+│   │   │   ├── libcord.so -> libcord.so.1.5.0
+│   │   │   ├── libcord.so.1 -> libcord.so.1.5.0
+│   │   │   ├── libcord.so.1.5.0
+│   │   │   ├── libgc.la
+│   │   │   ├── libgc.so -> libgc.so.1.5.2
+│   │   │   ├── libgc.so.1 -> libgc.so.1.5.2
+│   │   │   ├── libgc.so.1.5.2
+│   │   │   ├── libgccpp.la
+│   │   │   ├── libgccpp.so -> libgccpp.so.1.5.0
+│   │   │   ├── libgccpp.so.1 -> libgccpp.so.1.5.0
+│   │   │   ├── libgccpp.so.1.5.0
+│   │   │   ├── libgctba.la
+│   │   │   ├── libgctba.so -> libgctba.so.1.5.0
+│   │   │   ├── libgctba.so.1 -> libgctba.so.1.5.0
+│   │   │   └── libgctba.so.1.5.0
+│   │   └── share
+│   │       └── man
+│   │           └── man3
+│   │               └── gc.3.gz
+│   ├── k46i5kkswfzs9i2ps9s7y3c8fsvqgvxn-pcre-8.45
+│   │   └── lib
+│   │       ├── libpcre.la
+│   │       ├── libpcre.so -> libpcre.so.1.2.13
+│   │       ├── libpcre.so.1 -> libpcre.so.1.2.13
+│   │       ├── libpcre.so.1.2.13
+│   │       ├── libpcreposix.la
+│   │       ├── libpcreposix.so -> libpcreposix.so.0.0.7
+│   │       ├── libpcreposix.so.0 -> libpcreposix.so.0.0.7
+│   │       └── libpcreposix.so.0.0.7
+│   ├── k70k9x394f47dsm55hzxffbgbz0sciyl-libpsl-0.21.5
+│   │   └── lib
+│   │       ├── libpsl.la
+│   │       ├── libpsl.so -> libpsl.so.5.3.5
+│   │       ├── libpsl.so.5 -> libpsl.so.5.3.5
+│   │       └── libpsl.so.5.3.5
+│   ├── kcz1rxh3zyif90zi7a0varwyhnxc458h-nix-2.21.0-man
+│   │   └── share
+│   │       └── man
+│   │           ├── man1
+│   │           │   ├── nix-build.1.gz
+│   │           │   ├── nix-channel.1.gz
+│   │           │   ├── nix-collect-garbage.1.gz
+│   │           │   ├── nix-copy-closure.1.gz
+│   │           │   ├── nix-env-delete-generations.1.gz
+│   │           │   ├── nix-env-install.1.gz
+│   │           │   ├── nix-env-list-generations.1.gz
+│   │           │   ├── nix-env-query.1.gz
+│   │           │   ├── nix-env-rollback.1.gz
+│   │           │   ├── nix-env-set-flag.1.gz
+│   │           │   ├── nix-env-set.1.gz
+│   │           │   ├── nix-env-switch-generation.1.gz
+│   │           │   ├── nix-env-switch-profile.1.gz
+│   │           │   ├── nix-env-uninstall.1.gz
+│   │           │   ├── nix-env-upgrade.1.gz
+│   │           │   ├── nix-env.1.gz
+│   │           │   ├── nix-hash.1.gz
+│   │           │   ├── nix-instantiate.1.gz
+│   │           │   ├── nix-prefetch-url.1.gz
+│   │           │   ├── nix-shell.1.gz
+│   │           │   ├── nix-store-add-fixed.1.gz
+│   │           │   ├── nix-store-add.1.gz
+│   │           │   ├── nix-store-delete.1.gz
+│   │           │   ├── nix-store-dump-db.1.gz
+│   │           │   ├── nix-store-dump.1.gz
+│   │           │   ├── nix-store-export.1.gz
+│   │           │   ├── nix-store-gc.1.gz
+│   │           │   ├── nix-store-generate-binary-cache-key.1.gz
+│   │           │   ├── nix-store-import.1.gz
+│   │           │   ├── nix-store-load-db.1.gz
+│   │           │   ├── nix-store-optimise.1.gz
+│   │           │   ├── nix-store-print-env.1.gz
+│   │           │   ├── nix-store-query.1.gz
+│   │           │   ├── nix-store-read-log.1.gz
+│   │           │   ├── nix-store-realise.1.gz
+│   │           │   ├── nix-store-repair-path.1.gz
+│   │           │   ├── nix-store-restore.1.gz
+│   │           │   ├── nix-store-serve.1.gz
+│   │           │   ├── nix-store-verify-path.1.gz
+│   │           │   ├── nix-store-verify.1.gz
+│   │           │   ├── nix-store.1.gz
+│   │           │   ├── nix.1.gz
+│   │           │   ├── nix3-build.1.gz
+│   │           │   ├── nix3-bundle.1.gz
+│   │           │   ├── nix3-config-check.1.gz
+│   │           │   ├── nix3-config-show.1.gz
+│   │           │   ├── nix3-config.1.gz
+│   │           │   ├── nix3-copy.1.gz
+│   │           │   ├── nix3-daemon.1.gz
+│   │           │   ├── nix3-derivation-add.1.gz
+│   │           │   ├── nix3-derivation-show.1.gz
+│   │           │   ├── nix3-derivation.1.gz
+│   │           │   ├── nix3-develop.1.gz
+│   │           │   ├── nix3-edit.1.gz
+│   │           │   ├── nix3-eval.1.gz
+│   │           │   ├── nix3-flake-archive.1.gz
+│   │           │   ├── nix3-flake-check.1.gz
+│   │           │   ├── nix3-flake-clone.1.gz
+│   │           │   ├── nix3-flake-info.1.gz
+│   │           │   ├── nix3-flake-init.1.gz
+│   │           │   ├── nix3-flake-lock.1.gz
+│   │           │   ├── nix3-flake-metadata.1.gz
+│   │           │   ├── nix3-flake-new.1.gz
+│   │           │   ├── nix3-flake-prefetch.1.gz
+│   │           │   ├── nix3-flake-show.1.gz
+│   │           │   ├── nix3-flake-update.1.gz
+│   │           │   ├── nix3-flake.1.gz
+│   │           │   ├── nix3-fmt.1.gz
+│   │           │   ├── nix3-hash-convert.1.gz
+│   │           │   ├── nix3-hash-file.1.gz
+│   │           │   ├── nix3-hash-path.1.gz
+│   │           │   ├── nix3-hash-to-base16.1.gz
+│   │           │   ├── nix3-hash-to-base32.1.gz
+│   │           │   ├── nix3-hash-to-base64.1.gz
+│   │           │   ├── nix3-hash-to-sri.1.gz
+│   │           │   ├── nix3-hash.1.gz
+│   │           │   ├── nix3-help-stores.1.gz
+│   │           │   ├── nix3-help.1.gz
+│   │           │   ├── nix3-key-convert-secret-to-public.1.gz
+│   │           │   ├── nix3-key-generate-secret.1.gz
+│   │           │   ├── nix3-key.1.gz
+│   │           │   ├── nix3-log.1.gz
+│   │           │   ├── nix3-manpages.gz
+│   │           │   ├── nix3-nar-cat.1.gz
+│   │           │   ├── nix3-nar-dump-path.1.gz
+│   │           │   ├── nix3-nar-ls.1.gz
+│   │           │   ├── nix3-nar-pack.1.gz
+│   │           │   ├── nix3-nar.1.gz
+│   │           │   ├── nix3-path-info.1.gz
+│   │           │   ├── nix3-print-dev-env.1.gz
+│   │           │   ├── nix3-profile-diff-closures.1.gz
+│   │           │   ├── nix3-profile-history.1.gz
+│   │           │   ├── nix3-profile-install.1.gz
+│   │           │   ├── nix3-profile-list.1.gz
+│   │           │   ├── nix3-profile-remove.1.gz
+│   │           │   ├── nix3-profile-rollback.1.gz
+│   │           │   ├── nix3-profile-upgrade.1.gz
+│   │           │   ├── nix3-profile-wipe-history.1.gz
+│   │           │   ├── nix3-profile.1.gz
+│   │           │   ├── nix3-realisation-info.1.gz
+│   │           │   ├── nix3-realisation.1.gz
+│   │           │   ├── nix3-registry-add.1.gz
+│   │           │   ├── nix3-registry-list.1.gz
+│   │           │   ├── nix3-registry-pin.1.gz
+│   │           │   ├── nix3-registry-remove.1.gz
+│   │           │   ├── nix3-registry.1.gz
+│   │           │   ├── nix3-repl.1.gz
+│   │           │   ├── nix3-run.1.gz
+│   │           │   ├── nix3-search.1.gz
+│   │           │   ├── nix3-shell.1.gz
+│   │           │   ├── nix3-store-add-file.1.gz
+│   │           │   ├── nix3-store-add-path.1.gz
+│   │           │   ├── nix3-store-add.1.gz
+│   │           │   ├── nix3-store-cat.1.gz
+│   │           │   ├── nix3-store-copy-log.1.gz
+│   │           │   ├── nix3-store-copy-sigs.1.gz
+│   │           │   ├── nix3-store-delete.1.gz
+│   │           │   ├── nix3-store-diff-closures.1.gz
+│   │           │   ├── nix3-store-dump-path.1.gz
+│   │           │   ├── nix3-store-gc.1.gz
+│   │           │   ├── nix3-store-info.1.gz
+│   │           │   ├── nix3-store-ls.1.gz
+│   │           │   ├── nix3-store-make-content-addressed.1.gz
+│   │           │   ├── nix3-store-optimise.1.gz
+│   │           │   ├── nix3-store-path-from-hash-part.1.gz
+│   │           │   ├── nix3-store-ping.1.gz
+│   │           │   ├── nix3-store-prefetch-file.1.gz
+│   │           │   ├── nix3-store-repair.1.gz
+│   │           │   ├── nix3-store-sign.1.gz
+│   │           │   ├── nix3-store-verify.1.gz
+│   │           │   ├── nix3-store.1.gz
+│   │           │   ├── nix3-upgrade-nix.1.gz
+│   │           │   └── nix3-why-depends.1.gz
+│   │           ├── man5
+│   │           │   ├── nix-profiles.5.gz
+│   │           │   └── nix.conf.5.gz
+│   │           └── man8
+│   │               └── nix-daemon.8.gz
+│   ├── kq60cqfd2kb7mr6mlbbqbb8li7bkznrb-acl-2.3.2
+│   │   ├── lib
+│   │   │   ├── libacl.la
+│   │   │   ├── libacl.so -> libacl.so.1.1.2302
+│   │   │   ├── libacl.so.1 -> libacl.so.1.1.2302
+│   │   │   └── libacl.so.1.1.2302
+│   │   └── share
+│   │       └── locale
+│   │           ├── de
+│   │           │   └── LC_MESSAGES
+│   │           │       └── acl.mo
+│   │           ├── en@boldquot
+│   │           │   └── LC_MESSAGES
+│   │           │       └── acl.mo
+│   │           ├── en@quot
+│   │           │   └── LC_MESSAGES
+│   │           │       └── acl.mo
+│   │           ├── es
+│   │           │   └── LC_MESSAGES
+│   │           │       └── acl.mo
+│   │           ├── fr
+│   │           │   └── LC_MESSAGES
+│   │           │       └── acl.mo
+│   │           ├── gl
+│   │           │   └── LC_MESSAGES
+│   │           │       └── acl.mo
+│   │           ├── ka
+│   │           │   └── LC_MESSAGES
+│   │           │       └── acl.mo
+│   │           ├── pl
+│   │           │   └── LC_MESSAGES
+│   │           │       └── acl.mo
+│   │           └── sv
+│   │               └── LC_MESSAGES
+│   │                   └── acl.mo
+│   ├── n50hsxw4z8y04pa9hdb6wpacdv16xgfz-aws-c-io-0.13.36
+│   │   ├── include
+│   │   │   └── aws
+│   │   │       ├── io
+│   │   │       │   ├── async_stream.h
+│   │   │       │   ├── channel.h
+│   │   │       │   ├── channel_bootstrap.h
+│   │   │       │   ├── event_loop.h
+│   │   │       │   ├── exports.h
+│   │   │       │   ├── file_utils.h
+│   │   │       │   ├── future.h
+│   │   │       │   ├── host_resolver.h
+│   │   │       │   ├── io.h
+│   │   │       │   ├── logging.h
+│   │   │       │   ├── message_pool.h
+│   │   │       │   ├── pem.h
+│   │   │       │   ├── pipe.h
+│   │   │       │   ├── pkcs11.h
+│   │   │       │   ├── retry_strategy.h
+│   │   │       │   ├── shared_library.h
+│   │   │       │   ├── socket.h
+│   │   │       │   ├── socket_channel_handler.h
+│   │   │       │   ├── statistics.h
+│   │   │       │   ├── stream.h
+│   │   │       │   ├── tls_channel_handler.h
+│   │   │       │   └── uri.h
+│   │   │       └── testing
+│   │   │           ├── async_stream_tester.h
+│   │   │           ├── io_testing_channel.h
+│   │   │           └── stream_tester.h
+│   │   └── lib
+│   │       ├── aws-c-io
+│   │       │   └── cmake
+│   │       │       ├── aws-c-io-config.cmake
+│   │       │       └── shared
+│   │       │           ├── aws-c-io-targets-release.cmake
+│   │       │           └── aws-c-io-targets.cmake
+│   │       ├── libaws-c-io.so -> libaws-c-io.so.1.0.0
+│   │       └── libaws-c-io.so.1.0.0
+│   ├── n9sq1bvghs9z0qg6cmwg27y4jmszwgqi-libidn2-2.3.7
+│   │   ├── lib
+│   │   │   ├── libidn2.la
+│   │   │   ├── libidn2.so -> libidn2.so.0.4.0
+│   │   │   ├── libidn2.so.0 -> libidn2.so.0.4.0
+│   │   │   └── libidn2.so.0.4.0
+│   │   └── share
+│   │       └── locale
+│   │           ├── cs
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── da
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── de
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── eo
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── es
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── fi
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── fr
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── fur
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── hr
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── hu
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── id
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── it
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── ja
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── ka
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── ko
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── nl
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── pl
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── pt_BR
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── ro
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── ru
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── sr
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── sv
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── uk
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           ├── vi
+│   │           │   └── LC_MESSAGES
+│   │           │       └── libidn2.mo
+│   │           └── zh_CN
+│   │               └── LC_MESSAGES
+│   │                   └── libidn2.mo
+│   ├── plxvn2qhfa298rvwnazflvf1a8can4ih-libarchive-3.7.2-lib
+│   │   └── lib
+│   │       ├── libarchive.la
+│   │       ├── libarchive.so -> libarchive.so.13.7.2
+│   │       ├── libarchive.so.13 -> libarchive.so.13.7.2
+│   │       └── libarchive.so.13.7.2
+│   ├── r5ds20lq0d11wvykd3a89h2shykfnaj2-http-parser-2.9.4
+│   │   ├── include
+│   │   │   └── http_parser.h
+│   │   └── lib
+│   │       ├── libhttp_parser.so -> libhttp_parser.so.2.9.4
+│   │       ├── libhttp_parser.so.2.9 -> libhttp_parser.so.2.9.4
+│   │       └── libhttp_parser.so.2.9.4
+│   ├── s9g027wh7cvcnq47vhkd5bssnwlqnny0-sqlite-3.45.1
+│   │   └── lib
+│   │       ├── libsqlite3.la
+│   │       ├── libsqlite3.so -> libsqlite3.so.0.8.6
+│   │       ├── libsqlite3.so.0 -> libsqlite3.so.0.8.6
+│   │       └── libsqlite3.so.0.8.6
+│   ├── ski61i8mcm6myqvgjjxac0d3w60yn2gs-user-environment.drv
+│   ├── v2aswwg4mshc14236hv0ni3r7k2vn0p9-nghttp2-1.60.0-lib
+│   │   └── lib
+│   │       ├── libnghttp2.la
+│   │       ├── libnghttp2.so -> libnghttp2.so.14.27.0
+│   │       ├── libnghttp2.so.14 -> libnghttp2.so.14.27.0
+│   │       └── libnghttp2.so.14.27.0
+│   ├── v4lf9sva5wn9wnwj83p0sh1r4r033k26-aws-crt-cpp-0.24.7
+│   │   └── lib
+│   │       └── libaws-crt-cpp.so
+│   ├── vbqr5kdjaahds9wr29iz798j3bjv3dqv-aws-checksums-0.1.18
+│   │   ├── include
+│   │   │   └── aws
+│   │   │       └── checksums
+│   │   │           ├── crc.h
+│   │   │           └── exports.h
+│   │   └── lib
+│   │       ├── aws-checksums
+│   │       │   └── cmake
+│   │       │       ├── aws-checksums-config.cmake
+│   │       │       └── shared
+│   │       │           ├── aws-checksums-targets-release.cmake
+│   │       │           └── aws-checksums-targets.cmake
+│   │       ├── libaws-checksums.so -> libaws-checksums.so.1.0.0
+│   │       └── libaws-checksums.so.1.0.0
+│   ├── vwrm7xc2fha9imwzyz4xm5cvdm45l8m6-bzip2-1.0.8
+│   │   └── lib
+│   │       ├── libbz2.la
+│   │       ├── libbz2.so -> libbz2.so.1.0.8
+│   │       ├── libbz2.so.1 -> libbz2.so.1.0.8
+│   │       ├── libbz2.so.1.0 -> libbz2.so.1.0.8
+│   │       └── libbz2.so.1.0.8
+│   ├── x5brjfprnjinb71nm7fvagsp133h3wxn-curl-8.6.0
+│   │   ├── lib
+│   │   │   ├── libcurl.la
+│   │   │   ├── libcurl.so -> libcurl.so.4.8.0
+│   │   │   ├── libcurl.so.4 -> libcurl.so.4.8.0
+│   │   │   └── libcurl.so.4.8.0
+│   │   └── share
+│   │       ├── fish
+│   │       │   └── vendor_completions.d
+│   │       │       └── curl.fish
+│   │       └── zsh
+│   │           └── site-functions
+│   │               └── _curl
+│   ├── x8nbl7jdymzrk8jwv7c7b744r87b0qcs-libssh2-1.11.0
+│   │   └── lib
+│   │       ├── libssh2.la
+│   │       ├── libssh2.so -> libssh2.so.1.0.1
+│   │       ├── libssh2.so.1 -> libssh2.so.1.0.1
+│   │       └── libssh2.so.1.0.1
+│   ├── yhhks8bs588z5baiy4aml3hg89cw46w5-aws-c-event-stream-0.3.2
+│   │   ├── include
+│   │   │   └── aws
+│   │   │       └── event-stream
+│   │   │           ├── event_stream.h
+│   │   │           ├── event_stream_channel_handler.h
+│   │   │           ├── event_stream_exports.h
+│   │   │           ├── event_stream_rpc.h
+│   │   │           ├── event_stream_rpc_client.h
+│   │   │           └── event_stream_rpc_server.h
+│   │   └── lib
+│   │       ├── aws-c-event-stream
+│   │       │   └── cmake
+│   │       │       ├── aws-c-event-stream-config.cmake
+│   │       │       └── shared
+│   │       │           ├── aws-c-event-stream-targets-release.cmake
+│   │       │           └── aws-c-event-stream-targets.cmake
+│   │       ├── libaws-c-event-stream.so -> libaws-c-event-stream.so.1.0.0
+│   │       └── libaws-c-event-stream.so.1.0.0
+│   ├── yymknbfs51dv9wddas60flynpczyb14l-s2n-tls-1.4.6
+│   │   └── lib
+│   │       ├── libs2n.so -> libs2n.so.1
+│   │       ├── libs2n.so.1 -> libs2n.so.1.0.0
+│   │       ├── libs2n.so.1.0.0
+│   │       └── s2n
+│   │           └── cmake
+│   │               ├── modules
+│   │               │   └── Findcrypto.cmake
+│   │               ├── s2n-config.cmake
+│   │               └── shared
+│   │                   ├── s2n-targets-release.cmake
+│   │                   └── s2n-targets.cmake
+│   ├── yyqzw7xvsrn3h2zrvincbs1b291yzx8c-xz-5.6.1
+│   │   ├── lib
+│   │   │   ├── liblzma.la
+│   │   │   ├── liblzma.so -> liblzma.so.5.6.1
+│   │   │   ├── liblzma.so.5 -> liblzma.so.5.6.1
+│   │   │   └── liblzma.so.5.6.1
+│   │   └── share
+│   │       └── locale
+│   │           ├── ca
+│   │           │   └── LC_MESSAGES
+│   │           │       └── xz.mo
+│   │           ├── cs
+│   │           │   └── LC_MESSAGES
+│   │           │       └── xz.mo
+│   │           ├── da
+│   │           │   └── LC_MESSAGES
+│   │           │       └── xz.mo
+│   │           ├── de
+│   │           │   └── LC_MESSAGES
+│   │           │       └── xz.mo
+│   │           ├── eo
+│   │           │   └── LC_MESSAGES
+│   │           │       └── xz.mo
+│   │           ├── es
+│   │           │   └── LC_MESSAGES
+│   │           │       └── xz.mo
+│   │           ├── fi
+│   │           │   └── LC_MESSAGES
+│   │           │       └── xz.mo
+│   │           ├── fr
+│   │           │   └── LC_MESSAGES
+│   │           │       └── xz.mo
+│   │           ├── hr
+│   │           │   └── LC_MESSAGES
+│   │           │       └── xz.mo
+│   │           ├── hu
+│   │           │   └── LC_MESSAGES
+│   │           │       └── xz.mo
+│   │           ├── it
+│   │           │   └── LC_MESSAGES
+│   │           │       └── xz.mo
+│   │           ├── ko
+│   │           │   └── LC_MESSAGES
+│   │           │       └── xz.mo
+│   │           ├── pl
+│   │           │   └── LC_MESSAGES
+│   │           │       └── xz.mo
+│   │           ├── pt
+│   │           │   └── LC_MESSAGES
+│   │           │       └── xz.mo
+│   │           ├── pt_BR
+│   │           │   └── LC_MESSAGES
+│   │           │       └── xz.mo
+│   │           ├── ro
+│   │           │   └── LC_MESSAGES
+│   │           │       └── xz.mo
+│   │           ├── sr
+│   │           │   └── LC_MESSAGES
+│   │           │       └── xz.mo
+│   │           ├── sv
+│   │           │   └── LC_MESSAGES
+│   │           │       └── xz.mo
+│   │           ├── tr
+│   │           │   └── LC_MESSAGES
+│   │           │       └── xz.mo
+│   │           ├── uk
+│   │           │   └── LC_MESSAGES
+│   │           │       └── xz.mo
+│   │           ├── vi
+│   │           │   └── LC_MESSAGES
+│   │           │       └── xz.mo
+│   │           ├── zh_CN
+│   │           │   └── LC_MESSAGES
+│   │           │       └── xz.mo
+│   │           └── zh_TW
+│   │               └── LC_MESSAGES
+│   │                   └── xz.mo
+│   ├── z2yjhf13h2jrvwc1anqhgls37rm1mycz-aws-c-mqtt-0.9.10
+│   │   ├── include
+│   │   │   └── aws
+│   │   │       └── mqtt
+│   │   │           ├── client.h
+│   │   │           ├── exports.h
+│   │   │           ├── mqtt.h
+│   │   │           ├── private
+│   │   │           │   └── mqtt_client_test_helper.h
+│   │   │           └── v5
+│   │   │               ├── mqtt5_client.h
+│   │   │               ├── mqtt5_listener.h
+│   │   │               ├── mqtt5_packet_storage.h
+│   │   │               └── mqtt5_types.h
+│   │   └── lib
+│   │       ├── aws-c-mqtt
+│   │       │   └── cmake
+│   │       │       ├── aws-c-mqtt-config.cmake
+│   │       │       └── shared
+│   │       │           ├── aws-c-mqtt-targets-release.cmake
+│   │       │           └── aws-c-mqtt-targets.cmake
+│   │       ├── libaws-c-mqtt.so -> libaws-c-mqtt.so.1.0.0
+│   │       └── libaws-c-mqtt.so.1.0.0
+│   ├── zbaajn0dk65kwvrcglhli1j4xx4vhvvj-zlib-1.3.1
+│   │   ├── lib
+│   │   │   ├── libz.so -> libz.so.1.3.1
+│   │   │   ├── libz.so.1 -> libz.so.1.3.1
+│   │   │   └── libz.so.1.3.1
+│   │   └── share
+│   │       └── man
+│   │           └── man3
+│   │               └── zlib.3.gz
+│   └── zc1m4qm905z24cdmhckdpvhn2vd03vjr-libgit2-1.7.2-lib
+│       └── lib
+│           ├── libgit2.so -> libgit2.so.1.7
+│           ├── libgit2.so.1.7 -> libgit2.so.1.7.2
+│           └── libgit2.so.1.7.2
+└── var
+    ├── log
+    │   └── nix
+    │       └── drvs
+    │           └── sk
+    │               └── i61i8mcm6myqvgjjxac0d3w60yn2gs-user-environment.drv.bz2
+    ├── nix
+    │   ├── db
+    │   │   ├── big-lock
+    │   │   ├── db.sqlite
+    │   │   ├── reserved
+    │   │   └── schema
+    │   ├── gc.lock
+    │   ├── gcroots
+    │   │   ├── auto
+    │   │   │   └── 8wbf147dp5ld8mki0p14rrrsz4ldy593 -> /home/runner/.local/state/nix/profiles/profile-1-link
+    │   │   ├── per-user
+    │   │   └── profiles -> /nix/var/nix/profiles
+    │   ├── profiles
+    │   │   └── per-user
+    │   └── temproots
+    └── nix-quick-install-action
+        ├── nix -> /nix/store/4gcgr5bgj8gwxpflajjj9qxchswgassl-nix-2.21.0
+        └── registration
+
+503 directories, 1686 files
