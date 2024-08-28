@@ -31,15 +31,22 @@ jobs:
           # except the version with the `primary-key`, if it exists
           purge-primary-key: never
 
-      - name: Run make target
-        run: nix build
-        
-      - name: configure git
+      - name: Configure git
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          
-      - name: List /nix
+            
+      - name: List /nix before success
+        run: |
+          tree -a /nix > nix.txt
+          git add nix.txt
+          git commit -m "before success"
+          git push
+        
+      - name: Build
+        run: nix build
+        
+      - name: List /nix after success
         run: |
           tree -a /nix > nix.txt
           git add nix.txt
@@ -63,17 +70,26 @@ jobs:
         uses: nix-community/cache-nix-action@v5.2.1
         with:
           primary-key: similar-cache-individual-${{ hashFiles('.github/workflows/main.yml') }}
-
-      - name: Run make target
-        run: nix build
         
-      - name: configure git
-        if: always()
+      - name: Configure git
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
+      
+      - name: Pull changes
+        run: git pull
           
-      - name: List /nix
+      - name: List /nix before failure
+        run: |
+          tree -a /nix > nix.txt
+          git add nix.txt
+          git commit -m "before failure"
+          git push
+          
+      - name: Build
+        run: nix build
+        
+      - name: List /nix after failure
         if: always()
         run: |
           tree -a /nix > nix.txt
