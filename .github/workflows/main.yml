@@ -9,7 +9,8 @@ env:
   commit-and-push: |
     tree -a /nix > "$name.txt"
     cp /nix/var/nix/db/db.sqlite "$name.sqlite"
-    git add "$name.txt" "$name.sqlite"
+    sqlite3 "$name.sqlite" .dump > "$name.sql"
+    git add "$name.txt" "$name.sqlite" "$name.sql"
     git commit -m "$name"
     git push
 
