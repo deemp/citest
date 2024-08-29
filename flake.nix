@@ -31,7 +31,7 @@
           elixir = beam_pkgs.elixir_1_16;
           citest = beam_pkgs.mixRelease {
             inherit src pname version mixFodDeps elixir;
-
+            nativeBuildInputs = [ pkgs.libgcc ];
             ELIXIR_MAKE_CACHE_DIR = "/tmp/";
 
             postBuild = ''
