@@ -37,7 +37,7 @@
           elixir = beam_pkgs.elixir_1_16;
           citest = beam_pkgs.mixRelease {
             inherit pname version mixFodDeps elixir;
-            
+            nativeBuildInputs = [pkgs.libgcc];
             src = pkgs.lib.fileset.toSource {
               root = ./.;
               fileset = pkgs.lib.fileset.unions [
