@@ -58,9 +58,9 @@ jobs:
           name: after-success
         run: ${{ env.commit-and-push }}
         
-      - name: Setup tmate session
-        if: always()
-        uses: mxschmitt/action-tmate@v3
+      # - name: Setup tmate session
+      #   if: always()
+      #   uses: mxschmitt/action-tmate@v3
 
   check-cache:
     runs-on: ubuntu-22.04
@@ -102,6 +102,6 @@ jobs:
           name: after-failure
         run: ${{ env.commit-and-push }}
 
-      - name: Setup tmate session
-        if: always()
-        uses: mxschmitt/action-tmate@v3
+      # - name: Setup tmate session
+      #   if: always()
+      #   uses: mxschmitt/action-tmate@v3
